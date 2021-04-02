@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vanderbilt University - Informed Consent Form</title>
+	<meta name="description" content="Informed consent form for the online test.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="vu-consentform.css">
+	<script>
+		var test_url = 'https://oplab.barrios.io/oplab/60661ded68466c49a327909a/execute?mode=live&nextType=HIT&nextID=606750bb68466c49a32790a3&stimuliFolderID=6067503368466c49a32790a2';
+		if (window.location.search.length > 0) {
+			test_url = test_url + (test_url.includes('?') ? '&' : '?') + window.location.search.substring(1);
+		}
+		function accept_clicked() { location.href = test_url; }
+	</script>
+</head>
+<body>
+	<div id="for-desktop" style="display: none;">
+	<div class="wrapper">
+		<h1>Vanderbilt University &mdash; Informed Consent Form</h1>
+		<p><b>Title:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comparing Different Types of Perceptual Expertise</p>
+		<p><b>Principal Investigator:</b>&nbsp;&nbsp;&nbsp;&nbsp;Dr. Isabel Gauthier &mdash; Psychology Department</p>
+		<p style="padding-left: 32pt; text-indent: -16pt;">This research study, conducted at Vanderbilt University by Prof. Isabel Gauthier, is designed to help our understanding of how people recognize objects in their environment. The experiment consists of one HIT that may require from 5 to 20 min depending on the task (the information is provided in the HIT itself). You will first be asked to provide information about yourself (sex, age, race, native language, highest level of education completed)</p>
+		<p style="margin-bottom: 0;">The specific task may vary and could involve the following:</p>
+		<ol style="margin-top: 0; list-style-type: decimal;">
+			<li>Answering a short questionnaire about your ability and experience with a certain category of objects (e.g., cars, dogs, the faces of people of a particular race).</li>
+			<li>Matching images or parts of images of faces or objects, or recognizing them from memory after having studied them.</li>
+			<li>Choosing the “real” word for a specific domain among a set of words: e.g., which of the following is a real city? Paris, Todato, Jurpi</li>
+			<li>Trying to imagine the face of a celebrity or an object, reporting on the vividness of your mental images.</li>
+		</ol>
+		<p>Your participation is voluntary and you may discontinue participation at any time without penalty. Participation involves no more than minimal risk.</p>
+		<p>We may contact you at a later point to let you know of other HITs you can complete from our laboratory. You are under no obligation to complete any other HITs.</p>
+		<p><b>Confidentiality:</b> The only identifying information kept based on your participation in this study will be your Amazon Mechanical Turk WorkerID serial number.</p>
+		<p><b>Compensation:</b> If you satisfactorily complete the study, you will receive the amount listed in the HIT directory. Payments are made via Amazon&apos;s payment system.</p>
+		<p><b>Questions or Concerns:</b> You can ask questions about this research study now or any time during the study by e-mailing Isabel Gauthier at Isabel.gauthier@vanderbilt.edu</p>
+		<p>If you have questions about your rights as a research participant or feel that you have not been treated fairly, please contact the Vanderbilt University Human Research Protection Program Office at 615-322-2918, or toll-free 866-224-8273</p>
+		<p><b>Clicking Accept</b><br />By clicking on the “Accept HIT” button, you indicated that you agree to participate in the study and that you understand the information in this consent form. You agree that you are at least 18 years of age. You have not waived any legal rights you otherwise would have as a participant in a research study.</p>
+		<button type="button" onClick="accept_clicked()">Accept HIT</button>
+	</div>
+	</div>
+
+	<div id="for-mobile" style="display: none;">
+	<div class="wrapper">
+	<p>This online test is not suitable for mobile devices. Please access this page on your desktop or laptop computer.</p>
+	</div>
+	</div>
+
+	<script src="mobile-detect.min.js"></script>
+	<script>
+		var detector = new MobileDetect(window.navigator.userAgent);
+		var div_id = (detector.mobile() == null ? "for-desktop" : "for-mobile");
+		document.addEventListener("DOMContentLoaded", function(e) {
+			document.getElementById(div_id).style.display = "block";
+		});
+	</script>
+</body>
+</html>
