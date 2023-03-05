@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Loading experiment...</title>
+	<meta name="description" content="Experiment loader page.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		// test urls for each condition
+		var test_urls = [
+			"https://oplab.barrios.io/oplab/61393692a9112c38af35dcae/execute?mode=live&nextType=HIT&nextID=6403c19959e1683cd5809aed&stimuliFolderID=6403c15f59e1683cd5809aec",
+			"https://oplab.barrios.io/oplab/61393692a9112c38af35dcae/execute?mode=live&nextType=HIT&nextID=6403ee2559e1683cd5809af1&stimuliFolderID=6403edf759e1683cd5809af0"
+			];
+		// random assignment probabilities for each condition, sum of the probabilities should be 1
+		var test_prob = [1/2, 1/2];
+
+		var r = Math.random();
+		var p = test_prob.length - 1;
+		while (r < test_prob.slice(0, p).reduce(function(t, c) { return t + c; }, 0)) {
+			p -= 1;
+		}
+		var test_url = test_urls[p];
+		if (window.location.search.length > 0) {
+			test_url = test_url + (test_url.includes('?') ? '&' : '?') + window.location.search.substring(1);
+		}
+	</script>
+</head>
+<body>
+	<p id="loading-message">Loading experiment...</p>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function(e) {
+			location.href = test_url;
+			setTimeout(function() {
+				document.getElementById("loading-message").innerHTML = "<a href=\"" + test_url + "\">Click here</a> to start the experiment.";
+			}, 2000);
+		});
+	</script>
+</body>
+</html>
