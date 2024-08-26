@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vanderbilt University - Informed Consent Form</title>
+	<meta name="description" content="Informed consent form for the online test.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="vu-consentform.css">
+	<script>
+		var test_url = 'https://oplab.barrios.io/oplab/61393692a9112c38af35dcae/execute?mode=live&nextType=HIT&nextID=66cc777ae3f43d62b5c2805c&stimuliFolderID=66cc7739e3f43d62b5c2805b';
+		if (window.location.search.length > 0) {
+			test_url = test_url + (test_url.includes('?') ? '&' : '?') + window.location.search.substring(1);
+		}
+		function accept_clicked() { location.href = test_url; }
+	</script>
+</head>
+<body>
+	<div id="for-desktop" style="display: none;">
+	<div class="wrapper">
+		
+		<button type="button" onClick="accept_clicked()">CLICK HERE TO START</button>
+	</div>
+	</div>
+
+	<div id="for-mobile" style="display: none;">
+	<div class="wrapper">
+	<p>This online test is not suitable for mobile devices. Please access this page on your desktop or laptop computer.</p>
+	</div>
+	</div>
+
+	<script src="mobile-detect.min.js"></script>
+	<script>
+		var detector = new MobileDetect(window.navigator.userAgent);
+		var div_id = (detector.mobile() == null ? "for-desktop" : "for-mobile");
+		document.addEventListener("DOMContentLoaded", function(e) {
+			document.getElementById(div_id).style.display = "block";
+		});
+	</script>
+</body>
+</html>
+
