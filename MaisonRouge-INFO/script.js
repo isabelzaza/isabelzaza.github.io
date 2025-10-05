@@ -214,7 +214,7 @@ const LANG_KEY = "maisonrouge:lang";
 function getPreferredLang() {
   const saved = localStorage.getItem(LANG_KEY);
   if (saved && (saved === "fr" || saved === "en")) return saved;
-  // Default to French (requested), ignoring browser detection
+  // Default to French
   return "fr";
 }
 
@@ -229,23 +229,18 @@ function setLang(lang) {
 function applyI18n(lang) {
   const dict = I18N[lang] || I18N.fr;
 
-  // Elements with data-i18n (use innerHTML to allow markup)
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
-    if (dict[key] !== undefined) {
-      el.innerHTML = dict[key];
-    }
+    if (dict[key] !== undefined) el.innerHTML = dict[key];
   });
 
-  // Elements explicitly marked for HTML replacement
   document.querySelectorAll("[data-i18n-html]").forEach(el => {
     const key = el.getAttribute("data-i18n-html");
     if (dict[key] !== undefined) el.innerHTML = dict[key];
   });
 
-  // Attribute updates (meta description)
   document.querySelectorAll("[data-i18n-attr]").forEach(el => {
-    const spec = el.getAttribute("data-i18n-attr"); // e.g., "content:meta.description"
+    const spec = el.getAttribute("data-i18n-attr");
     const [attr, k] = spec.split(":");
     if (attr && k && dict[k] !== undefined) {
       el.setAttribute(attr, dict[k]);
@@ -255,17 +250,7 @@ function applyI18n(lang) {
   if (dict["meta.title"]) document.title = dict["meta.title"];
 }
 
-// ---- Mobile nav toggle ----
-const menuToggle = document.getElementById("menuToggle");
-const siteNav = document.getElementById("siteNav");
-if (menuToggle && siteNav) {
-  menuToggle.addEventListener("click", () => {
-    const isOpen = siteNav.classList.toggle("open");
-    menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-  });
-}
-
-// ---- Smooth scroll ----
+// ---- Smooth scroll for anchor links ----
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener("click", (e) => {
     const id = a.getAttribute("href");
@@ -273,10 +258,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if (el) {
       e.preventDefault();
       el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-    if (siteNav && siteNav.classList.contains("open")) {
-      siteNav.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
     }
   });
 });

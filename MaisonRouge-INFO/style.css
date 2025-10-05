@@ -20,7 +20,7 @@ body {
 
 .container { width: min(980px, 100%); margin: 0 auto; padding: 0 16px; }
 
-/* Header & Nav */
+/* Header */
 .site-header {
   position: sticky; top: 0; z-index: 1000;
   background: var(--card); border-bottom: 1px solid var(--border);
@@ -28,30 +28,15 @@ body {
 .header-inner { display: flex; align-items: center; gap: 12px; padding: 12px 0; }
 .site-header h1 { font-size: 1.1rem; margin: 0; flex: 1; }
 
+/* Language toggle — force high-contrast look */
 .lang-switch button {
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  background: #fff !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
   padding: 6px 10px;
-  background: #fff;
+  border-radius: 8px;
+  font-weight: 600;
   cursor: pointer;
-}
-
-#menuToggle {
-  font-size: 1.25rem; background: none; border: 1px solid var(--border);
-  padding: 6px 10px; border-radius: 8px;
-}
-.site-nav { display: none; flex-wrap: wrap; gap: 8px; }
-.site-nav a {
-  display: inline-block; padding: 8px 10px; border-radius: 10px;
-  text-decoration: none; color: var(--text); border: 1px solid var(--border);
-  background: #fff;
-}
-.site-nav a:hover { background: #fafafa; }
-.site-nav.open { display: flex; }
-
-@media (min-width: 880px) {
-  #menuToggle { display: none; }
-  .site-nav { display: flex !important; }
 }
 
 /* Cards & sections */
@@ -127,9 +112,7 @@ button.secondary {
 }
 
 /* Menu section */
-.menu-links {
-  padding-left: 18px;
-}
+.menu-links { padding-left: 18px; }
 
 /* Checklist */
 .checklist { list-style: none; padding-left: 0; }

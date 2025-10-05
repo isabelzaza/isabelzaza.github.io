@@ -1,9 +1,8 @@
-# Maison Rouge – Guide (FR/EN) — v2
+# Maison Rouge – Guide (FR/EN) — v3
 
-Changes requested:
-1. **Default language = French**, with a single toggle button labeled **ENGLISH** (switches to FRANÇAIS when in EN).
-2. **Landing section** with two large choices: (a) **Departure checklist — important & required reading**, (b) **Menu for other info** (links to every section for mobile discoverability).
-3. **Movie rental** copy clarified (only if owner is available to help), in both FR and EN.
+- **Top navigation removed** (no more pill buttons). Users navigate via the **landing choices** and the **Menu — Other information** section.
+- **Language toggle** is a clear button in the header: shows **ENGLISH** (or **FRANÇAIS** when in English). Default language is **French**.
+- **Movie rentals** note retained: only if owner is available to help.
 
 ## Files
 - `index.html`
@@ -11,7 +10,5 @@ Changes requested:
 - `script.js`
 - `README.md`
 
-## Deploy on GitHub Pages
-1. Create a public repo (or reuse your existing one).
-2. Upload these files to the repo root and commit.
-3. Settings → Pages → *Deploy from a branch* → Branch **main**, folder **/** → **Save**.
+## Deploy
+Replace these four files in your GitHub repo and reload your Pages site.
