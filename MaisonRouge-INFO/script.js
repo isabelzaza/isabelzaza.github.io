@@ -115,7 +115,9 @@ const I18N = {
     "laveuse.li1": "Laveuse : bouton de gauche pour ON, bouton de droite jusqu’à ce que les lumières aillent à droite; relâcher (vous l’entendrez se barrer avant le démarrage).",
     "laveuse.li2": "Vidéo d’instructions : <a href='https://www.youtube.com/watch?v=1y-QQjH6DIs' target='_blank' rel='noopener'>voir sur YouTube</a>.",
     "laveuse.li3": "Après le séchage, mettre la peluche dans le sac Ziploc.",
-    "footer.copy": "© Maison Rouge · Guide invités"
+    "footer.copy": "© Maison Rouge · Guide invités",
+    "dl.fr": "Télécharger la checklist (PDF — FR)",
+    "dl.en": "Checklist en anglais (PDF — EN)"
   },
   en: {
     "meta.title": "Maison Rouge – Guest Guide",
@@ -232,7 +234,9 @@ const I18N = {
     "laveuse.li1": "Washer: left knob to ON, right knob until the lights move to the right; release (you’ll hear it lock before starting).",
     "laveuse.li2": "How-to video: <a href='https://www.youtube.com/watch?v=1y-QQjH6DIs' target='_blank' rel='noopener'>see on YouTube</a>.",
     "laveuse.li3": "After drying, put the lint in the Ziploc bag.",
-    "footer.copy": "© Maison Rouge · Guest guide"
+    "footer.copy": "© Maison Rouge · Guest guide",
+    "dl.fr": "Checklist in French (PDF — FR)",
+    "dl.en": "Download checklist (PDF — EN)"
   }
 };
 
