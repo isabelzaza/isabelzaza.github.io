@@ -28,7 +28,7 @@ body {
 .header-inner { display: flex; align-items: center; gap: 12px; padding: 12px 0; }
 .site-header h1 { font-size: 1.1rem; margin: 0; flex: 1; }
 
-/* Language toggle */
+/* Language toggle — force high-contrast look */
 .lang-switch button {
   background: #fff !important;
   color: var(--text) !important;
@@ -108,7 +108,7 @@ button.secondary {
 .start-card p { margin: 0; color: var(--muted); }
 
 @media (min-width: 680px) {
-  .start .start-grid { grid-template-columns: 1fr 1fr 1fr; }
+  .start .start-grid { grid-template-columns: 1fr 1fr; }
 }
 
 /* Menu section */
