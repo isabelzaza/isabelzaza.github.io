@@ -7,11 +7,13 @@
   <meta name="description" content="Chalet à St‑Donat de Montcalm, tranquillité assurée, avec plage sur le magnifique lac Ouareau.">
   <style>
     :root{--maxw:1100px;--pad:clamp(12px,2vw,20px);--radius:16px;--shadow:0 10px 30px rgba(0,0,0,.10);}
-    *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;color:#1a1a1a;background:#fafafa}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;color:#1a1a1a;background:#fafafa}
     header{position:sticky;top:0;background:#ffffffd9;backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #e9e9e9;z-index:10}
     .nav{max-width:var(--maxw);margin:0 auto;padding:8px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
     .nav a,.nav button{text-decoration:none;color:#1a1a1a;padding:8px 10px;border-radius:10px;background:transparent;border:none;cursor:pointer}
-    .nav a:hover,.nav button:hover{background:#f2f2f2}.brand{font-weight:700}
+    .nav a:hover,.nav button:hover{background:#f2f2f2}
+    .brand{font-weight:700}
     .cta{padding:10px 14px;border-radius:999px;border:1px solid #ddd;box-shadow:var(--shadow);background:#fff}
     main{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad) 80px}
     .hero{border-bottom:1px solid #eee;background:radial-gradient(1200px 400px at 50% -10%,#ffffff,#f2f6ff);}
@@ -19,7 +21,6 @@
     @media (min-width:900px){.hero-inner{grid-template-columns:180px 1fr 180px}}
     .hero h1{margin:0;font-size:clamp(28px,5vw,44px);text-align:center}
     .hero p{margin:0;color:#333;max-width:80ch;justify-self:center;text-align:center}
-    .hero .actions{text-align:center}
     .btn{display:inline-block;text-decoration:none;font-weight:600;padding:12px 18px;border-radius:999px;border:1px solid #ddd;background:#fff;box-shadow:var(--shadow)}
     .hero-img{width:100%;height:160px;object-fit:cover;border-radius:16px;border:1px solid #eee;box-shadow:var(--shadow)}
     @media (min-width:900px){.hero-img{height:220px}}
@@ -45,6 +46,8 @@
         <a href="#about" class="lang-en">About</a>
         <a href="#photos" class="lang-fr">Photos</a>
         <a href="#photos" class="lang-en">Photos</a>
+        <a href="#discover" class="lang-fr">Découvrir</a>
+        <a href="#discover" class="lang-en">Discover</a>
         <a href="#contact" class="cta lang-fr">Contact</a>
         <a href="#contact" class="cta lang-en">Contact</a>
       </div>
@@ -69,8 +72,8 @@
     <section id="about" class="card">
       <h2 class="lang-fr">À propos</h2>
       <h2 class="lang-en">About</h2>
-      <p class="lang-fr">Chalet à St‑Donat de Montcalm, tranquillité assurée, avec plage sur le magnifique lac Ouareau (jusqu'à 10 personnes). Deux chambres avec lits king, troisième chambre avec lits doubles superposés et lit simple, plus lits supplémentaires dans le sous‑sol (1 queen, 1 double), balcon dans la chambre principale, solarium et grand deck. Deux salles de bain et une salle d'eau. Contacter isabelzaza@gmail.com. Prix dépend du nombre de personnes, sous le marché, informez‑vous. Location à long terme disponible.</p>
-      <p class="lang-en">Peaceful cottage in St‑Donat‑de‑Montcalm with a beach on beautiful Lac Ouareau (up to 10 guests). Two king bedrooms; a third bedroom with bunk doubles and a single; extra beds in the basement (1 queen, 1 double); primary bedroom balcony, solarium, and large deck. Two bathrooms and a half bath. Contact isabelzaza@gmail.com. Prices depend on number of guests, below market—please inquire. Long‑term rental available.</p>
+      <p class="lang-fr">Chalet à St‑Donat de Montcalm, tranquillité assurée, avec plage sur le magnifique lac Ouareau (jusqu'à 10 personnes). Deux chambres avec lits king, troisième chambre avec lits doubles superposés et lit simple, plus lits supplémentaires dans le sous‑sol (1 queen, 1 double), balcon dans la chambre principale, solarium et grand deck. Deux salles de bain et une salle d'eau. Prix dépend du nombre de personnes, sous le marché, informez‑vous. Location à long terme disponible.</p>
+      <p class="lang-en">Peaceful cottage in St‑Donat‑de‑Montcalm with a beach on beautiful Lac Ouareau (up to 10 guests). Two king bedrooms; a third bedroom with bunk doubles and a single; extra beds in the basement (1 queen, 1 double); primary bedroom balcony, solarium, and large deck. Two bathrooms and a half bath. Prices depend on number of guests, below market—please inquire. Long‑term rental available.</p>
     </section>
 
     <section id="photos" class="card">
@@ -81,41 +84,20 @@
       </div>
     </section>
 
+    <section id="discover" class="card">
+      <h2 class="lang-fr">Découvrir Saint‑Donat</h2>
+      <h2 class="lang-en">Discover Saint‑Donat</h2>
+      <p class="lang-fr">Pour en savoir plus sur les activités, restaurants et attractions locales, visitez <a href="https://www.tripadvisor.com/Tourism-g984036-Saint_Donat_de_Montcalm_Quebec-Vacations.html" target="_blank">cette page TripAdvisor</a>.</p>
+      <p class="lang-en">For more about local activities, restaurants, and attractions, visit <a href="https://www.tripadvisor.com/Tourism-g984036-Saint_Donat_de_Montcalm_Quebec-Vacations.html" target="_blank">this TripAdvisor page</a>.</p>
+    </section>
+
     <section id="contact" class="card">
       <h2 class="lang-fr">Contact</h2>
       <h2 class="lang-en">Contact</h2>
-
-      <form action="mailto:isabelzaza@gmail.com" method="post" enctype="text/plain">
-        <label class="lang-fr">Nom <input type="text" name="Nom" required></label>
-        <label class="lang-en">Name <input type="text" name="Name" required></label>
-
-        <label class="lang-fr">Courriel <input type="email" name="Courriel" required></label>
-        <label class="lang-en">Email <input type="email" name="Email" required></label>
-
-        <label class="lang-fr">Date d’arrivée <input type="date" name="Date d’arrivée"></label>
-        <label class="lang-en">Arrival date <input type="date" name="Arrival date"></label>
-
-        <label class="lang-fr">Date de départ <input type="date" name="Date de départ"></label>
-        <label class="lang-en">Departure date <input type="date" name="Departure date"></label>
-
-        <label class="lang-fr">Nombre d’adultes <input type="number" name="Adultes" min="1"></label>
-        <label class="lang-en">Number of adults <input type="number" name="Adults" min="1"></label>
-
-        <label class="lang-fr">Nombre d’enfants <input type="number" name="Enfants" min="0"></label>
-        <label class="lang-en">Number of kids <input type="number" name="Kids" min="0"></label>
-
-        <label class="lang-fr">Nombre de lits souhaités <input type="number" name="Lits" min="1"></label>
-        <label class="lang-en">Number of beds <input type="number" name="Beds" min="1"></label>
-
-        <label class="lang-fr">Message <textarea name="Message" rows="5" required></textarea></label>
-        <label class="lang-en">Message <textarea name="Message" rows="5" required></textarea></label>
-
-        <button class="btn lang-fr" type="submit">Envoyer par courriel</button>
-        <button class="btn lang-en" type="submit">Send by email</button>
-      </form>
-
-      <p class="muted lang-fr" style="margin-top:8px">Ou écrivez directement à <a href="mailto:isabelzaza@gmail.com">isabelzaza@gmail.com</a></p>
-      <p class="muted lang-en" style="margin-top:8px">Or email directly at <a href="mailto:isabelzaza@gmail.com">isabelzaza@gmail.com</a></p>
+      <p class="lang-fr">Pour réserver ou poser une question, écrivez à <a href="mailto:isabelzaza@gmail.com">isabelzaza@gmail.com</a> en indiquant vos dates souhaitées, le nombre d’adultes, d’enfants et de lits nécessaires.</p>
+      <p class="lang-en">To book or inquire, please email <a href="mailto:isabelzaza@gmail.com">isabelzaza@gmail.com</a> with your desired dates, number of adults, children, and beds needed.</p>
+      <p class="muted lang-fr" style="margin-top:8px">Réponse rapide garantie – vérifiez votre dossier de courrier indésirable si vous ne recevez pas de réponse sous 24h.</p>
+      <p class="muted lang-en" style="margin-top:8px">Quick replies – check your spam folder if you don’t receive a response within 24 hours.</p>
     </section>
   </main>
 
