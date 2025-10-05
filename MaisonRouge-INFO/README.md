@@ -1,11 +1,8 @@
-# Maison Rouge – Guide (FR/EN) — v4
+# Maison Rouge – Guide (FR/EN) — v5
 
-New in this version:
-1. **“Liste à emporter / Packing list”** — third landing card + section (starter supplies; bring extras for longer stays; water cooler bottle replacement reminder).
-2. **“Déshumidificateur / Dehumidifier”** — guidance for using the basement unit and emptying the tank.
-3. **Checklist** — new final item asking guests to contact you if anything broke or they noticed a problem (your number marked **please text / svp texte**). Also updated other spots to keep the **please text / texte préférable** note next to your number.
-
-No top nav; landing + menu only. Default language: **French**. Toggle shows **ENGLISH**/**FRANÇAIS**.
+What’s new:
+- **“À apporter / Packing list”** replaces “Liste à emporter,” with a reliable translation hook so it toggles correctly.
+- Everything else stays the same as v4 (dehumidifier section, checklist final item, phone number notes).
 
 ## Files
 - `index.html`

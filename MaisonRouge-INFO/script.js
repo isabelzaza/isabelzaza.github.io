@@ -2,18 +2,18 @@
 const I18N = {
   fr: {
     "meta.title": "Maison Rouge – Guide des Invités",
-    "meta.description": "Informations pour les invités de la Maison Rouge : checklist de départ, à emporter, serrures, internet et télé, urgences, déshumidificateur, kayak, randonnées, grill, foyer, eau, pannes, déchets, cuisine, laveuse/sécheuse.",
+    "meta.description": "Informations pour les invités de la Maison Rouge : checklist de départ, à apporter, serrures, internet et télé, urgences, déshumidificateur, kayak, randonnées, grill, foyer, eau, pannes, déchets, cuisine, laveuse/sécheuse.",
     "header.title": "Maison Rouge – Guide des Invités",
     "start.title": "Bienvenue — Choisissez une option",
     "start.optChecklist.h3": "Checklist départ",
     "start.optChecklist.p": "Important & lecture requise",
-    "start.optEmporter.h3": "Liste à emporter",
-    "start.optEmporter.p": "Articles utiles pour séjours prolongés",
+    "start.optApporter.h3": "À apporter",
+    "start.optApporter.p": "Utile pour séjours prolongés",
     "start.optMenu.h3": "Menu — autres infos",
     "start.optMenu.p": "Voir toutes les sections",
     "menu.title": "Menu — Autres informations",
     "nav.checklist": "Checklist départ",
-    "nav.emporter": "Liste à emporter",
+    "nav.apporter": "À apporter",
     "nav.serrures": "Serrures & portes",
     "nav.locks": "Guardian Locks / Fliplock",
     "nav.internet": "Internet & Télé",
@@ -41,12 +41,12 @@ const I18N = {
     "checklist.items.7": " <input type='checkbox' data-key='trash' /> Vider toutes les poubelles et jeter les sacs dans les bacs à l’intérieur de l’abri à la rue. Si les bacs sont pleins, apporter à l’éco-centre (214 Chemin du Long de la Rivière, près de Patrick Morin; ouverts tous les jours sauf dimanche et lundi).",
     "checklist.items.8": " <input type='checkbox' data-key='guardian-locked' /> S’assurer que les <em>guardian locks</em> soient en position verrouillée sur toutes les portes au rez-de-chaussée et au 1<sup>er</sup> (sauf la porte d’entrée).",
     "checklist.items.9": " <input type='checkbox' data-key='contact-issues' /> Si quelque chose s’est brisé ou si vous avez noté un problème, <strong>merci de me contacter</strong> pour m’en informer — <a href='tel:+16154952944'>615-495-2944</a> (<em>svp texte</em>), ou <a href='mailto:isabel.gauthier@vanderbilt.edu'>isabel.gauthier@vanderbilt.edu</a>.",
-    "emporter.title": "Liste à emporter",
-    "emporter.p1": "La maison fournit des articles de départ (quelques rouleaux de papier toilette, essuie-tout, quelques pods de café Keurig, tablettes pour lave-vaisselle). Pour un <strong>séjour prolongé</strong>, vous voudrez peut-être apporter des quantités supplémentaires.",
-    "emporter.li1": "Papier toilette et essuie-tout (supplémentaires).",
-    "emporter.li2": "Café/thé préférés; pods Keurig supplémentaires.",
-    "emporter.li3": "Tablettes pour lave-vaisselle supplémentaires si vous cuisinez beaucoup.",
-    "emporter.p2": "Si vous souhaitez utiliser la <strong>fontaine/distributrice d’eau</strong>, merci de <strong>remplacer toute nouvelle bouteille</strong> que vous consommez (ramener la vide au Metro pour la consigne et en racheter une).",
+    "apporter.title": "À apporter",
+    "apporter.p1": "La maison fournit des articles de départ (quelques rouleaux de papier toilette, essuie-tout, quelques pods de café Keurig, tablettes pour lave-vaisselle). Pour un <strong>séjour prolongé</strong>, vous voudrez peut-être apporter des quantités supplémentaires.",
+    "apporter.li1": "Papier toilette et essuie-tout (supplémentaires).",
+    "apporter.li2": "Café/thé préférés; pods Keurig supplémentaires.",
+    "apporter.li3": "Tablettes pour lave-vaisselle supplémentaires si vous cuisinez beaucoup.",
+    "apporter.p2": "Si vous souhaitez utiliser la <strong>fontaine/distributrice d’eau</strong>, merci de <strong>remplacer toute nouvelle bouteille</strong> que vous consommez (ramener la vide au Metro pour la consigne et en racheter une).",
     "deshum.title": "Déshumidificateur (sous-sol)",
     "deshum.p1": "Si vous utilisez le <strong>sous-sol</strong>, vous pouvez faire fonctionner le déshumidificateur situé dans la salle de télé.",
     "deshum.p2": "Merci de <strong>vider le réservoir d’eau</strong> lorsqu’il est plein (l’appareil s’arrête automatiquement; vider dans l’évier).",
@@ -124,13 +124,13 @@ const I18N = {
     "start.title": "Welcome — Choose an option",
     "start.optChecklist.h3": "Departure checklist",
     "start.optChecklist.p": "Important & required reading",
-    "start.optEmporter.h3": "Packing list",
-    "start.optEmporter.p": "Useful for longer stays",
+    "start.optApporter.h3": "Packing list",
+    "start.optApporter.p": "Useful for longer stays",
     "start.optMenu.h3": "Menu — other info",
     "start.optMenu.p": "See all sections",
     "menu.title": "Menu — Other information",
     "nav.checklist": "Departure checklist",
-    "nav.emporter": "Packing list",
+    "nav.apporter": "Packing list",
     "nav.serrures": "Locks & doors",
     "nav.locks": "Guardian Locks / Fliplock",
     "nav.internet": "Internet & TV",
@@ -158,12 +158,12 @@ const I18N = {
     "checklist.items.7": " <input type='checkbox' data-key='trash' /> Empty all trash bins and place bags in the curbside shed containers. If full, take to the Eco-Centre (214 Chemin du Long de la Rivière; open daily except Sunday and Monday).",
     "checklist.items.8": " <input type='checkbox' data-key='guardian-locked' /> Make sure the <em>guardian locks</em> are locked on all doors on the ground and 1st floors (except the front door).",
     "checklist.items.9": " <input type='checkbox' data-key='contact-issues' /> If anything broke or you noticed a problem, <strong>please contact me</strong> to let me know — <a href='tel:+16154952944'>615-495-2944</a> (<em>please text</em>), or <a href='mailto:isabel.gauthier@vanderbilt.edu'>isabel.gauthier@vanderbilt.edu</a>.",
-    "emporter.title": "Packing list",
-    "emporter.p1": "The house provides starter supplies (a few rolls of toilet paper, paper towels, a few Keurig coffee pods, dishwasher tablets). For an <strong>extended stay</strong>, you may want to bring extras.",
-    "emporter.li1": "Extra toilet paper and paper towels.",
-    "emporter.li2": "Preferred coffee/tea; extra Keurig pods.",
-    "emporter.li3": "Additional dishwasher tablets if you cook a lot.",
-    "emporter.p2": "If you plan to use the <strong>water cooler</strong>, please <strong>replace any new bottle</strong> you use (return the empty for the deposit at Metro and buy a new one).",
+    "apporter.title": "Packing list",
+    "apporter.p1": "The house provides starter supplies (a few rolls of toilet paper, paper towels, a few Keurig coffee pods, dishwasher tablets). For an <strong>extended stay</strong>, you may want to bring extras.",
+    "apporter.li1": "Extra toilet paper and paper towels.",
+    "apporter.li2": "Preferred coffee/tea; extra Keurig pods.",
+    "apporter.li3": "Additional dishwasher tablets if you cook a lot.",
+    "apporter.p2": "If you plan to use the <strong>water cooler</strong>, please <strong>replace any new bottle</strong> you use (return the empty for the deposit at Metro and buy a new one).",
     "deshum.title": "Dehumidifier (basement)",
     "deshum.p1": "If you use the <strong>basement</strong>, you may want to run the dehumidifier in the TV room.",
     "deshum.p2": "Please <strong>empty the water tank</strong> when it is full (the unit stops automatically; empty into the sink).",
@@ -299,7 +299,7 @@ if (checklist) {
   checklist.querySelectorAll('input[type="checkbox"][data-key]').forEach(cb => {
     const key = storageKey(cb.dataset.key);
     const val = localStorage.getItem(key);
-    cb.checked = val === "1";
+    cb.checked = val == "1";
     cb.addEventListener("change", () => {
       localStorage.setItem(key, cb.checked ? "1" : "0");
     });
@@ -322,6 +322,6 @@ const langBtn = document.getElementById("langToggleBtn");
 const initial = getPreferredLang();
 setLang(initial);
 langBtn.addEventListener("click", () => {
-  const next = document.documentElement.getAttribute("lang") === "fr" ? "en" : "fr";
+  const next = document.documentElement.getAttribute("lang") == "fr" ? "en" : "fr";
   setLang(next);
 });
