@@ -1,10 +1,11 @@
-# Site du Chalet – St-Donat (Lac Ouareau)
+# Site du Chalet – St-Donat (Lac Ouareau) — v3
 
-## Ajouter 18 photos
-- Placez vos images dans `images/` nommées `01.jpg` … `18.jpg` (paysage recommandé).
-- Taille suggérée: 1600–2000 px de large, JPG qualité ~75 pour rapidité.
+- **Localisation** section removed. Added a nav link to the official Saint-Donat TripAdvisor page.
+- **Hero** now displays images **03.jpg** (left) and **14.jpg** (right).
+- Description updated with: "prix depend du nombre de personnes, sous le marche, informer vous" et "location a long terme disponible".
+- Language toggle (FR ⇄ EN) switches all visible text.
+- Gallery supports **01.jpg … 18.jpg** in `/images/`.
 
-## Publier sur GitHub Pages
-1. Créez un dépôt (ex: `chalet-st-donat`).
-2. Ajoutez tous les fichiers de ce dossier au dépôt.
-3. Dans **Settings → Pages**: Déployer depuis la branche `main` (root). L’URL s’affichera après le build.
+## GitHub Pages
+1. Create a repo (e.g., `chalet-st-donat`), upload all files.
+2. Settings → Pages → Deploy from branch → `main` → root.
