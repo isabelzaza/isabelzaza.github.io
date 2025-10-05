@@ -1,33 +1,44 @@
-
 <!doctype html>
 <html lang="fr" data-lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chalet Saint-Donat – Lac Ouareau</title>
-  <meta name="description" content="Chalet a St-Donat de Montcalm, tranquilité assurée, avec plage sur le magnifique lac Ouareau (jusqu&#x27;a 10 personnes). Deux chambres avec lits king, troisiem">
+  <meta name="description" content="Chalet a St-Donat de Montcalm, tranquilité assurée, avec plage sur le magnifique lac Ouareau (jusqu'a 10 personnes).">
   <style>
     :root{--maxw:1100px;--pad:clamp(12px,2vw,20px);--radius:16px;--shadow:0 10px 30px rgba(0,0,0,.10);}
-    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;color:#1a1a1a;background:#fafafa}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;color:#1a1a1a;background:#fafafa}
     header{position:sticky;top:0;background:#ffffffd9;backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #e9e9e9;z-index:10}
     .nav{max-width:var(--maxw);margin:0 auto;padding:8px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
     .nav a,.nav button{text-decoration:none;color:#1a1a1a;padding:8px 10px;border-radius:10px;background:transparent;border:none;cursor:pointer}
-    .nav a:hover,.nav button:hover{background:#f2f2f2} .brand{font-weight:700} .cta{padding:10px 14px;border-radius:999px;border:1px solid #ddd;box-shadow:var(--shadow);background:#fff}
+    .nav a:hover,.nav button:hover{background:#f2f2f2}
+    .brand{font-weight:700} .cta{padding:10px 14px;border-radius:999px;border:1px solid #ddd;box-shadow:var(--shadow);background:#fff}
     main{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad) 80px}
     .hero{border-bottom:1px solid #eee;background:radial-gradient(1200px 400px at 50% -10%,#ffffff,#f2f6ff);}
     .hero-inner{display:grid;gap:16px;align-items:center;padding:40px var(--pad)}
     @media (min-width:900px){.hero-inner{grid-template-columns:180px 1fr 180px}}
-    .hero h1{margin:0;font-size:clamp(28px,5vw,44px);text-align:center} .hero p{margin:0;color:#333;max-width:80ch;justify-self:center;text-align:center}
-    .hero .actions{text-align:center} .btn{display:inline-block;text-decoration:none;font-weight:600;padding:12px 18px;border-radius:999px;border:1px solid #ddd;background:#fff;box-shadow:var(--shadow)}
-    .hero-img{width:100%;height:160px;object-fit:cover;border-radius:16px;border:1px solid #eee;box-shadow:var(--shadow)} @media (min-width:900px){.hero-img{height:220px}}
-    section{margin-top:40px} .card{background:#fff;border:1px solid #eee;border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(16px,2.2vw,24px)}
-    .gallery{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)} @media (min-width:740px){.gallery{grid-template-columns:repeat(3,1fr)}}
+    .hero h1{margin:0;font-size:clamp(28px,5vw,44px);text-align:center}
+    .hero p{margin:0;color:#333;max-width:80ch;justify-self:center;text-align:center}
+    .hero .actions{text-align:center}
+    .btn{display:inline-block;text-decoration:none;font-weight:600;padding:12px 18px;border-radius:999px;border:1px solid #ddd;background:#fff;box-shadow:var(--shadow)}
+    .hero-img{width:100%;height:160px;object-fit:cover;border-radius:16px;border:1px solid #eee;box-shadow:var(--shadow)}
+    @media (min-width:900px){.hero-img{height:220px}}
+    section{margin-top:40px}
+    .card{background:#fff;border:1px solid #eee;border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(16px,2.2vw,24px)}
+    .gallery{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
+    @media (min-width:740px){.gallery{grid-template-columns:repeat(3,1fr)}}
     .gallery img{width:100%;height:220px;object-fit:cover;display:block;border-radius:12px;border:1px solid #eee}
-    footer{border-top:1px solid #eee;background:#fff} .foot{max-width:var(--maxw);margin:0 auto;padding:22px var(--pad);color:#555;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-    .muted{color:#666} .hidden{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-    .lang-en{display:none} html[data-lang="en"] .lang-fr{display:none} html[data-lang="en"] .lang-en{display:block}
+    footer{border-top:1px solid #eee;background:#fff}
+    .foot{max-width:var(--maxw);margin:0 auto;padding:22px var(--pad);color:#555;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .muted{color:#666}
+    .hidden{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+    .lang-en{display:none}
+    html[data-lang="en"] .lang-fr{display:none}
+    html[data-lang="en"] .lang-en{display:block}
     #banner{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);padding:14px 20px;border-radius:10px;color:#fff;font-weight:600;display:none;z-index:1000}
-    #banner.success{background:#4caf50;} #banner.error{background:#f44336;}
+    #banner.success{background:#4caf50;}
+    #banner.error{background:#f44336;}
   </style>
 </head>
 <body>
@@ -69,8 +80,8 @@
     <section id="about" class="card">
       <h2 class="lang-fr">À propos</h2>
       <h2 class="lang-en">About</h2>
-      <p class="lang-fr">Chalet a St-Donat de Montcalm, tranquilité assurée, avec plage sur le magnifique lac Ouareau (jusqu&#x27;a 10 personnes). Deux chambres avec lits king, troisieme chambre avec lits doubles superposes et lit simple, plus lits supplementaires dans le sous-sol (1 queen, 1 double),balcon dans la chambre principale, solarium et grand deck. Deux salles de bain et une salle d&#x27;eau. Contacter isabelzaza@gmail.com prix depend du nombre de personnes, sous le marche, informer vous. location a long terme disponible</p>
-      <p class="lang-en">Peaceful cottage in St-Donat-de-Montcalm with a beach on beautiful Lac Ouareau (up to 10 guests). Two king bedrooms; a third bedroom with bunk doubles and a single; extra beds in the basement (1 queen, 1 double); primary bedroom balcony, solarium, and large deck. Two bathrooms and a half bath. Contact isabelzaza@gmail.com. Prices depend on number of guests, below market—please inquire. Long-term rental available.</p>
+      <p class="lang-fr">Chalet a St-Donat de Montcalm, tranquilité assurée, avec plage sur le magnifique lac Ouareau (jusqu'a 10 personnes). Deux chambres avec lits king, troisieme chambre avec lits doubles superposés et lit simple, plus lits supplementaires dans le sous-sol (1 queen, 1 double), balcon dans la chambre principale, solarium et grand deck. Deux salles de bain et une salle d'eau. Contacter isabelzaza@gmail.com. Prix dépend du nombre de personnes, sous le marché, informez-vous. Location à long terme disponible.</p>
+      <p class="lang-en">Peaceful cottage in St‑Donat‑de‑Montcalm with a beach on beautiful Lac Ouareau (up to 10 guests). Two king bedrooms; a third bedroom with bunk doubles and a single; extra beds in the basement (1 queen, 1 double); primary bedroom balcony, solarium, and large deck. Two bathrooms and a half bath. Contact isabelzaza@gmail.com. Prices depend on number of guests, below market—please inquire. Long‑term rental available.</p>
     </section>
 
     <section id="photos" class="card">
@@ -117,44 +128,6 @@
 
   <footer><div class="foot"><div>&copy; <span id="y"></span> Chalet St-Donat</div><div class="muted">Photos © propriétaires</div></div></footer>
   <div id="banner"></div>
-
-  <script>
-  window.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('y').textContent = new Date().getFullYear();
-    const htmlEl = document.documentElement;
-    const toggle = document.getElementById('toggleLang');
-    toggle.addEventListener('click', ()=>{
-      htmlEl.dataset.lang = htmlEl.dataset.lang === 'fr' ? 'en' : 'fr';
-      toggle.textContent = htmlEl.dataset.lang === 'fr' ? 'FR / EN' : 'EN / FR';
-    });
-    const form = document.getElementById('contactForm');
-    const msg = document.getElementById('formMsg');
-    const banner = document.getElementById('banner');
-    if (!form) return;
-
-    form.addEventListener('submit', async (e)=>{
-      e.preventDefault();
-      msg.textContent = htmlEl.dataset.lang === 'fr' ? 'Envoi…' : 'Sending…';
-      try {
-        const resp = await fetch(form.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)});
-        if(resp.ok){
-          form.reset();
-          showBanner('success', htmlEl.dataset.lang==='fr' ? '✅ Message envoyé avec succès!' : '✅ Message sent successfully!');
-        } else {
-          showBanner('error', htmlEl.dataset.lang==='fr' ? '⚠️ Erreur: écrivez à isabelzaza@gmail.com' : '⚠️ Error: please email isabelzaza@gmail.com');
-        }
-      } catch(e) {
-        showBanner('error', htmlEl.dataset.lang==='fr' ? '⚠️ Connexion impossible.' : '⚠️ Network issue.');
-      }
-    });
-
-    function showBanner(type, text) {
-      banner.className = type;
-      banner.textContent = text;
-      banner.style.display = 'block';
-      setTimeout(()=>banner.style.display='none', 4000);
-    }
-  });
-  </script>
+  <script src="form-handler.js"></script>
 </body>
 </html>
