@@ -8,36 +8,26 @@
   <meta name="description" content="Chalet a St-Donat de Montcalm, tranquilité assurée, avec plage sur le magnifique lac Ouareau (jusqu&#x27;a 10 personnes). Deux chambres avec lits king, troisiem">
   <style>
     :root{--maxw:1100px;--pad:clamp(12px,2vw,20px);--radius:16px;--shadow:0 10px 30px rgba(0,0,0,.10);}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;color:#1a1a1a;background:#fafafa}
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;color:#1a1a1a;background:#fafafa}
     header{position:sticky;top:0;background:#ffffffd9;backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #e9e9e9;z-index:10}
     .nav{max-width:var(--maxw);margin:0 auto;padding:8px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
     .nav a,.nav button{text-decoration:none;color:#1a1a1a;padding:8px 10px;border-radius:10px;background:transparent;border:none;cursor:pointer}
-    .nav a:hover,.nav button:hover{background:#f2f2f2}
-    .brand{font-weight:700}
-    .cta{padding:10px 14px;border-radius:999px;border:1px solid #ddd;box-shadow:var(--shadow);background:#fff}
+    .nav a:hover,.nav button:hover{background:#f2f2f2} .brand{font-weight:700} .cta{padding:10px 14px;border-radius:999px;border:1px solid #ddd;box-shadow:var(--shadow);background:#fff}
     main{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad) 80px}
     .hero{border-bottom:1px solid #eee;background:radial-gradient(1200px 400px at 50% -10%,#ffffff,#f2f6ff);}
     .hero-inner{display:grid;gap:16px;align-items:center;padding:40px var(--pad)}
     @media (min-width:900px){.hero-inner{grid-template-columns:180px 1fr 180px}}
-    .hero h1{margin:0;font-size:clamp(28px,5vw,44px);text-align:center}
-    .hero p{margin:0;color:#333;max-width:80ch;justify-self:center;text-align:center}
-    .hero .actions{text-align:center}
-    .btn{display:inline-block;text-decoration:none;font-weight:600;padding:12px 18px;border-radius:999px;border:1px solid #ddd;background:#fff;box-shadow:var(--shadow)}
-    .hero-img{width:100%;height:160px;object-fit:cover;border-radius:16px;border:1px solid #eee;box-shadow:var(--shadow)}
-    @media (min-width:900px){.hero-img{height:220px}}
-    section{margin-top:40px}
-    .card{background:#fff;border:1px solid #eee;border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(16px,2.2vw,24px)}
-    .gallery{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
-    @media (min-width:740px){.gallery{grid-template-columns:repeat(3,1fr)}}
+    .hero h1{margin:0;font-size:clamp(28px,5vw,44px);text-align:center} .hero p{margin:0;color:#333;max-width:80ch;justify-self:center;text-align:center}
+    .hero .actions{text-align:center} .btn{display:inline-block;text-decoration:none;font-weight:600;padding:12px 18px;border-radius:999px;border:1px solid #ddd;background:#fff;box-shadow:var(--shadow)}
+    .hero-img{width:100%;height:160px;object-fit:cover;border-radius:16px;border:1px solid #eee;box-shadow:var(--shadow)} @media (min-width:900px){.hero-img{height:220px}}
+    section{margin-top:40px} .card{background:#fff;border:1px solid #eee;border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(16px,2.2vw,24px)}
+    .gallery{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)} @media (min-width:740px){.gallery{grid-template-columns:repeat(3,1fr)}}
     .gallery img{width:100%;height:220px;object-fit:cover;display:block;border-radius:12px;border:1px solid #eee}
-    footer{border-top:1px solid #eee;background:#fff}
-    .foot{max-width:var(--maxw);margin:0 auto;padding:22px var(--pad);color:#555;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-    .muted{color:#666}
-    .hidden{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-    .lang-en{display:none}
-    html[data-lang="en"] .lang-fr{display:none}
-    html[data-lang="en"] .lang-en{display:block}
+    footer{border-top:1px solid #eee;background:#fff} .foot{max-width:var(--maxw);margin:0 auto;padding:22px var(--pad);color:#555;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .muted{color:#666} .hidden{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+    .lang-en{display:none} html[data-lang="en"] .lang-fr{display:none} html[data-lang="en"] .lang-en{display:block}
+    #banner{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);padding:14px 20px;border-radius:10px;color:#fff;font-weight:600;display:none;z-index:1000}
+    #banner.success{background:#4caf50;} #banner.error{background:#f44336;}
   </style>
 </head>
 <body>
@@ -94,60 +84,42 @@
     <section id="contact" class="card">
       <h2 class="lang-fr">Contact</h2>
       <h2 class="lang-en">Contact</h2>
-
       <form id="contactForm" action="https://formspree.io/f/mzzjvjdn" method="POST">
-        <label class="hidden" aria-hidden="true">Website
-          <input type="text" name="website" tabindex="-1" autocomplete="off">
-        </label>
-
+        <label class="hidden" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
         <div class="grid" style="gap:12px;display:grid;">
           <label class="lang-fr">Nom <input type="text" name="name" placeholder="Votre nom"></label>
           <label class="lang-en">Name <input type="text" name="name_en" placeholder="Your name"></label>
-
           <label class="lang-fr">Courriel (obligatoire) <input type="email" name="email" required placeholder="votre@email.com"></label>
           <label class="lang-en">Email (required) <input type="email" name="email_en" required placeholder="you@example.com"></label>
-
           <label class="lang-fr">Date d’arrivée <input type="date" name="arrival"></label>
           <label class="lang-en">Arrival date <input type="date" name="arrival_en"></label>
-
           <label class="lang-fr">Date de départ <input type="date" name="departure"></label>
           <label class="lang-en">Departure date <input type="date" name="departure_en"></label>
-
           <label class="lang-fr">Adultes <input type="number" min="1" name="adults" placeholder="ex: 2"></label>
           <label class="lang-en">Adults <input type="number" min="1" name="adults_en" placeholder="e.g., 2"></label>
-
           <label class="lang-fr">Enfants <input type="number" min="0" name="kids" placeholder="ex: 3"></label>
           <label class="lang-en">Children <input type="number" min="0" name="kids_en" placeholder="e.g., 3"></label>
-
           <label class="lang-fr">Lits souhaités <input type="number" min="1" name="beds" placeholder="ex: 4"></label>
           <label class="lang-en">Beds needed <input type="number" min="1" name="beds_en" placeholder="e.g., 4"></label>
-
-          <label class="lang-fr">Message (obligatoire)
-            <textarea name="message" required rows="5" placeholder="Votre message..."></textarea></label>
-          <label class="lang-en">Message (required)
-            <textarea name="message_en" required rows="5" placeholder="Your message..."></textarea></label>
+          <label class="lang-fr">Message (obligatoire)<textarea name="message" required rows="5" placeholder="Votre message..."></textarea></label>
+          <label class="lang-en">Message (required)<textarea name="message_en" required rows="5" placeholder="Your message..."></textarea></label>
         </div>
-
         <div style="margin-top:12px">
           <button class="btn lang-fr" type="submit">Envoyer la demande</button>
           <button class="btn lang-en" type="submit">Send inquiry</button>
         </div>
         <p id="formMsg" class="muted" style="margin-top:10px"></p>
       </form>
-
       <p class="muted lang-fr" style="margin-top:8px">Ou écrivez directement : <a href="mailto:isabelzaza@gmail.com">isabelzaza@gmail.com</a></p>
       <p class="muted lang-en" style="margin-top:8px">Or email directly: <a href="mailto:isabelzaza@gmail.com">isabelzaza@gmail.com</a></p>
     </section>
   </main>
 
-  <footer>
-    <div class="foot">
-      <div>&copy; <span id="y"></span> Chalet St-Donat</div>
-      <div class="muted">Photos © propriétaires</div>
-    </div>
-  </footer>
+  <footer><div class="foot"><div>&copy; <span id="y"></span> Chalet St-Donat</div><div class="muted">Photos © propriétaires</div></div></footer>
+  <div id="banner"></div>
 
   <script>
+  window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('y').textContent = new Date().getFullYear();
     const htmlEl = document.documentElement;
     const toggle = document.getElementById('toggleLang');
@@ -157,15 +129,32 @@
     });
     const form = document.getElementById('contactForm');
     const msg = document.getElementById('formMsg');
+    const banner = document.getElementById('banner');
+    if (!form) return;
+
     form.addEventListener('submit', async (e)=>{
       e.preventDefault();
       msg.textContent = htmlEl.dataset.lang === 'fr' ? 'Envoi…' : 'Sending…';
-      try{
+      try {
         const resp = await fetch(form.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)});
-        if(resp.ok){form.reset();msg.textContent=htmlEl.dataset.lang==='fr'?'Merci! Nous vous répondrons sous peu.':'Thanks! We’ll get back to you soon.';}
-        else{msg.textContent=htmlEl.dataset.lang==='fr'?'Erreur. Vous pouvez écrire à isabelzaza@gmail.com.':'Error. You can email isabelzaza@gmail.com.';}
-      }catch(e){msg.textContent=htmlEl.dataset.lang==='fr'?'Connexion impossible.':'Network issue.';}
+        if(resp.ok){
+          form.reset();
+          showBanner('success', htmlEl.dataset.lang==='fr' ? '✅ Message envoyé avec succès!' : '✅ Message sent successfully!');
+        } else {
+          showBanner('error', htmlEl.dataset.lang==='fr' ? '⚠️ Erreur: écrivez à isabelzaza@gmail.com' : '⚠️ Error: please email isabelzaza@gmail.com');
+        }
+      } catch(e) {
+        showBanner('error', htmlEl.dataset.lang==='fr' ? '⚠️ Connexion impossible.' : '⚠️ Network issue.');
+      }
     });
+
+    function showBanner(type, text) {
+      banner.className = type;
+      banner.textContent = text;
+      banner.style.display = 'block';
+      setTimeout(()=>banner.style.display='none', 4000);
+    }
+  });
   </script>
 </body>
 </html>
