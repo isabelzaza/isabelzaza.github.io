@@ -4,130 +4,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chalet Saint-Donat – Lac Ouareau</title>
-  <meta name="description" content="Chalet a St-Donat de Montcalm, tranquilité assurée, avec plage sur le magnifique lac Ouareau (jusqu'a 10 personnes).">
   <style>
-    :root{--maxw:1100px;--pad:clamp(12px,2vw,20px);--radius:16px;--shadow:0 10px 30px rgba(0,0,0,.10);}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;color:#1a1a1a;background:#fafafa}
-    header{position:sticky;top:0;background:#ffffffd9;backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #e9e9e9;z-index:10}
-    .nav{max-width:var(--maxw);margin:0 auto;padding:8px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-    .nav a,.nav button{text-decoration:none;color:#1a1a1a;padding:8px 10px;border-radius:10px;background:transparent;border:none;cursor:pointer}
-    .nav a:hover,.nav button:hover{background:#f2f2f2}
-    .brand{font-weight:700} .cta{padding:10px 14px;border-radius:999px;border:1px solid #ddd;box-shadow:var(--shadow);background:#fff}
-    main{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad) 80px}
-    .hero{border-bottom:1px solid #eee;background:radial-gradient(1200px 400px at 50% -10%,#ffffff,#f2f6ff);}
-    .hero-inner{display:grid;gap:16px;align-items:center;padding:40px var(--pad)}
-    @media (min-width:900px){.hero-inner{grid-template-columns:180px 1fr 180px}}
-    .hero h1{margin:0;font-size:clamp(28px,5vw,44px);text-align:center}
-    .hero p{margin:0;color:#333;max-width:80ch;justify-self:center;text-align:center}
-    .hero .actions{text-align:center}
-    .btn{display:inline-block;text-decoration:none;font-weight:600;padding:12px 18px;border-radius:999px;border:1px solid #ddd;background:#fff;box-shadow:var(--shadow)}
-    .hero-img{width:100%;height:160px;object-fit:cover;border-radius:16px;border:1px solid #eee;box-shadow:var(--shadow)}
-    @media (min-width:900px){.hero-img{height:220px}}
-    section{margin-top:40px}
-    .card{background:#fff;border:1px solid #eee;border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(16px,2.2vw,24px)}
-    .gallery{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
-    @media (min-width:740px){.gallery{grid-template-columns:repeat(3,1fr)}}
-    .gallery img{width:100%;height:220px;object-fit:cover;display:block;border-radius:12px;border:1px solid #eee}
-    footer{border-top:1px solid #eee;background:#fff}
-    .foot{max-width:var(--maxw);margin:0 auto;padding:22px var(--pad);color:#555;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-    .muted{color:#666}
-    .hidden{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-    .lang-en{display:none}
-    html[data-lang="en"] .lang-fr{display:none}
-    html[data-lang="en"] .lang-en{display:block}
-    #banner{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);padding:14px 20px;border-radius:10px;color:#fff;font-weight:600;display:none;z-index:1000}
-    #banner.success{background:#4caf50;}
-    #banner.error{background:#f44336;}
+    body {font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; margin: 0; background: #fafafa; color: #1a1a1a;}
+    main {max-width: 900px; margin: 0 auto; padding: 20px;}
+    h1, h2 {text-align: center;}
+    .card {background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,.1); margin: 20px 0;}
+    label {display: block; margin-top: 10px;}
+    input, textarea {width: 100%; padding: 8px; margin-top: 4px; border-radius: 6px; border: 1px solid #ccc; font-size: 1rem;}
+    button {margin-top: 12px; padding: 10px 18px; border: 1px solid #ddd; border-radius: 999px; background: #fff; cursor: pointer;}
+    button:hover {background: #f2f2f2;}
+    .muted {color: #555;}
   </style>
 </head>
 <body>
-  <header>
-    <nav class="nav">
-      <div class="brand">Chalet St-Donat</div>
-      <div>
-        <a href="#about" class="lang-fr">À propos</a>
-        <a href="#about" class="lang-en">About</a>
-        <a href="#photos" class="lang-fr">Photos</a>
-        <a href="#photos" class="lang-en">Photos</a>
-        <a href="https://www.tripadvisor.com/Tourism-g984036-Saint_Donat_de_Montcalm_Quebec-Vacations.html" target="_blank" rel="noopener" class="lang-fr">Découvrir Saint‑Donat</a>
-        <a href="https://www.tripadvisor.com/Tourism-g984036-Saint_Donat_de_Montcalm_Quebec-Vacations.html" target="_blank" rel="noopener" class="lang-en">Explore Saint‑Donat</a>
-        <a href="#contact" class="cta lang-fr">Contact</a>
-        <a href="#contact" class="cta lang-en">Contact</a>
-      </div>
-      <div><button id="toggleLang">FR / EN</button></div>
-    </nav>
-  </header>
-
   <main>
-    <section class="hero">
-      <div class="hero-inner">
-        <img src="images/03.jpg" alt="Photo 03" class="hero-img" onerror="this.style.display='none'">
-        <div>
-          <h1 class="lang-fr">Chalet au bord du lac Ouareau</h1>
-          <h1 class="lang-en">Lac Ouareau Lakeside Cottage</h1>
-          <p class="lang-fr">Saint-Donat-de-Montcalm, Québec</p>
-          <p class="lang-en">Saint‑Donat‑de‑Montcalm, Québec</p>
-          <div class="actions">
-            <a class="btn lang-fr" href="#contact">Demander les disponibilités</a>
-            <a class="btn lang-en" href="#contact">Check availability</a>
-          </div>
-        </div>
-        <img src="images/14.jpg" alt="Photo 14" class="hero-img" onerror="this.style.display='none'">
-      </div>
-    </section>
-
+    <h1>Chalet au bord du lac Ouareau</h1>
     <section id="about" class="card">
-      <h2 class="lang-fr">À propos</h2>
-      <h2 class="lang-en">About</h2>
-      <p class="lang-fr">Chalet a St-Donat de Montcalm, tranquilité assurée, avec plage sur le magnifique lac Ouareau (jusqu'a 10 personnes). Deux chambres avec lits king, troisieme chambre avec lits doubles superposés et lit simple, plus lits supplementaires dans le sous-sol (1 queen, 1 double), balcon dans la chambre principale, solarium et grand deck. Deux salles de bain et une salle d'eau. Contacter isabelzaza@gmail.com. Prix dépend du nombre de personnes, sous le marché, informez-vous. Location à long terme disponible.</p>
-      <p class="lang-en">Peaceful cottage in St‑Donat‑de‑Montcalm with a beach on beautiful Lac Ouareau (up to 10 guests). Two king bedrooms; a third bedroom with bunk doubles and a single; extra beds in the basement (1 queen, 1 double); primary bedroom balcony, solarium, and large deck. Two bathrooms and a half bath. Contact isabelzaza@gmail.com. Prices depend on number of guests, below market—please inquire. Long‑term rental available.</p>
-    </section>
-
-    <section id="photos" class="card">
-      <h2 class="lang-fr">Photos</h2>
-      <h2 class="lang-en">Photos</h2>
-      <div class="gallery">
-        <img src="images/01.jpg" alt="Photo 01"><img src="images/02.jpg" alt="Photo 02"><img src="images/03.jpg" alt="Photo 03"><img src="images/04.jpg" alt="Photo 04"><img src="images/05.jpg" alt="Photo 05"><img src="images/06.jpg" alt="Photo 06"><img src="images/07.jpg" alt="Photo 07"><img src="images/08.jpg" alt="Photo 08"><img src="images/09.jpg" alt="Photo 09"><img src="images/10.jpg" alt="Photo 10"><img src="images/11.jpg" alt="Photo 11"><img src="images/12.jpg" alt="Photo 12"><img src="images/13.jpg" alt="Photo 13"><img src="images/14.jpg" alt="Photo 14"><img src="images/15.jpg" alt="Photo 15"><img src="images/16.jpg" alt="Photo 16"><img src="images/17.jpg" alt="Photo 17"><img src="images/18.jpg" alt="Photo 18">
-      </div>
+      <h2>À propos</h2>
+      <p>Chalet à St‑Donat de Montcalm, tranquillité assurée, avec plage sur le magnifique lac Ouareau (jusqu'à 10 personnes).
+      Deux chambres avec lits king, troisième chambre avec lits doubles superposés et lit simple, plus lits supplémentaires dans le sous‑sol (1 queen, 1 double),
+      balcon dans la chambre principale, solarium et grand deck. Deux salles de bain et une salle d'eau.
+      <br>Contacter <a href="mailto:isabelzaza@gmail.com">isabelzaza@gmail.com</a>
+      <br>Prix dépend du nombre de personnes, sous le marché, informez‑vous.
+      <br>Location à long terme disponible.</p>
     </section>
 
     <section id="contact" class="card">
-      <h2 class="lang-fr">Contact</h2>
-      <h2 class="lang-en">Contact</h2>
-      <form id="contactForm" action="https://formspree.io/f/mzzjvjdn" method="POST">
-        <label class="hidden" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
-        <div class="grid" style="gap:12px;display:grid;">
-          <label class="lang-fr">Nom <input type="text" name="name" placeholder="Votre nom"></label>
-          <label class="lang-en">Name <input type="text" name="name_en" placeholder="Your name"></label>
-          <label class="lang-fr">Courriel (obligatoire) <input type="email" name="email" required placeholder="votre@email.com"></label>
-          <label class="lang-en">Email (required) <input type="email" name="email_en" required placeholder="you@example.com"></label>
-          <label class="lang-fr">Date d’arrivée <input type="date" name="arrival"></label>
-          <label class="lang-en">Arrival date <input type="date" name="arrival_en"></label>
-          <label class="lang-fr">Date de départ <input type="date" name="departure"></label>
-          <label class="lang-en">Departure date <input type="date" name="departure_en"></label>
-          <label class="lang-fr">Adultes <input type="number" min="1" name="adults" placeholder="ex: 2"></label>
-          <label class="lang-en">Adults <input type="number" min="1" name="adults_en" placeholder="e.g., 2"></label>
-          <label class="lang-fr">Enfants <input type="number" min="0" name="kids" placeholder="ex: 3"></label>
-          <label class="lang-en">Children <input type="number" min="0" name="kids_en" placeholder="e.g., 3"></label>
-          <label class="lang-fr">Lits souhaités <input type="number" min="1" name="beds" placeholder="ex: 4"></label>
-          <label class="lang-en">Beds needed <input type="number" min="1" name="beds_en" placeholder="e.g., 4"></label>
-          <label class="lang-fr">Message (obligatoire)<textarea name="message" required rows="5" placeholder="Votre message..."></textarea></label>
-          <label class="lang-en">Message (required)<textarea name="message_en" required rows="5" placeholder="Your message..."></textarea></label>
-        </div>
-        <div style="margin-top:12px">
-          <button class="btn lang-fr" type="submit">Envoyer la demande</button>
-          <button class="btn lang-en" type="submit">Send inquiry</button>
-        </div>
-        <p id="formMsg" class="muted" style="margin-top:10px"></p>
+      <h2>Contact</h2>
+      <form action="mailto:isabelzaza@gmail.com" method="post" enctype="text/plain">
+        <label>Nom <input type="text" name="Nom" required></label>
+        <label>Courriel <input type="email" name="Courriel" required></label>
+        <label>Message <textarea name="Message" rows="5" required></textarea></label>
+        <button type="submit">Envoyer par courriel</button>
       </form>
-      <p class="muted lang-fr" style="margin-top:8px">Ou écrivez directement : <a href="mailto:isabelzaza@gmail.com">isabelzaza@gmail.com</a></p>
-      <p class="muted lang-en" style="margin-top:8px">Or email directly: <a href="mailto:isabelzaza@gmail.com">isabelzaza@gmail.com</a></p>
+      <p class="muted" style="margin-top:8px">Ou écrivez directement à <a href="mailto:isabelzaza@gmail.com">isabelzaza@gmail.com</a></p>
     </section>
   </main>
-
-  <footer><div class="foot"><div>&copy; <span id="y"></span> Chalet St-Donat</div><div class="muted">Photos © propriétaires</div></div></footer>
-  <div id="banner"></div>
-  <script src="form-handler.js"></script>
 </body>
 </html>
