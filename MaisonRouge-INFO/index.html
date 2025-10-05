@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="meta.title">Maison Rouge – Guide des Invités</title>
+  <meta name="description" content="Informations pour les invités de la Maison Rouge : checklist de départ, serrures, internet et télé, urgences, kayak, randonnées, grill, foyer, eau, pannes, déchets, cuisine, laveuse/sécheuse." data-i18n-attr="content:meta.description" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 data-i18n="header.title">Maison Rouge – Guide des Invités</h1>
+
+      <div class="lang-switch">
+        <label for="langSwitch" class="visually-hidden" data-i18n="a11y.language">Langue</label>
+        <select id="langSwitch" aria-label="Language">
+          <option value="fr">FR</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+
+      <button id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="siteNav">☰</button>
+      <nav id="siteNav" class="site-nav" aria-label="Navigation principale">
+        <a href="#checklist"><span data-i18n="nav.checklist">Checklist départ</span></a>
+        <a href="#serrures"><span data-i18n="nav.serrures">Serrures & portes</span></a>
+        <a href="#locks"><span data-i18n="nav.locks">Guardian Locks / Fliplock</span></a>
+        <a href="#internet"><span data-i18n="nav.internet">Internet & Télé</span></a>
+        <a href="#urgences"><span data-i18n="nav.urgences">Urgences</span></a>
+        <a href="#kayak"><span data-i18n="nav.kayak">Kayak</span></a>
+        <a href="#rando"><span data-i18n="nav.rando">Randonnée</span></a>
+        <a href="#grill"><span data-i18n="nav.grill">Grill / BBQ</span></a>
+        <a href="#foyer"><span data-i18n="nav.foyer">Foyer</span></a>
+        <a href="#eau"><span data-i18n="nav.eau">Eau</span></a>
+        <a href="#panne"><span data-i18n="nav.panne">Panne d’électricité</span></a>
+        <a href="#dechets"><span data-i18n="nav.dechets">Poubelles / Recyclage / Compost</span></a>
+        <a href="#cuisine"><span data-i18n="nav.cuisine">Cuisine</span></a>
+        <a href="#laveuse"><span data-i18n="nav.laveuse">Laveuse / Sécheuse</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="checklist" class="card highlight" aria-labelledby="checklist-title">
+      <div class="card-header">
+        <h2 id="checklist-title" data-i18n-html="checklist.title">À votre départ — <span class=\"pill\">IMPORTANT</span></h2>
+        <div class="actions">
+          <button id="resetChecklist" class="secondary" data-i18n="checklist.reset">Tout décocher</button>
+        </div>
+      </div>
+
+      <p class="muted" data-i18n-html="checklist.hint">Ceci est une liste <strong>interactive</strong> : touchez pour cocher. Vos choix restent enregistrés sur votre téléphone (localement).</p>
+
+      <ul class="checklist" id="departureChecklist">
+        <li><label data-i18n-html="checklist.items.0"><input type="checkbox" data-key="reset-state" /> Remettre la Maison Rouge dans le même état et replacer les objets, meubles et jouets au même endroit où vous les avez trouvés.</label></li>
+        <li><label data-i18n-html="checklist.items.1"><input type="checkbox" data-key="fireplace-ashes" /> Vérifier que le feu du foyer soit complètement éteint avant votre départ. <strong>Ne JAMAIS</strong> mettre de cendres dans les poubelles régulières. Utilisez la poubelle noire à cendres dehors (juste pour les cendres, rien d’autre).</label></li>
+        <li><label data-i18n-html="checklist.items.2"><input type="checkbox" data-key="fridge" /> Vérifier que le réfrigérateur soit vide.</label></li>
+        <li><label data-i18n-html="checklist.items.3"><input type="checkbox" data-key="windows" /> Vérifier que toutes les fenêtres soient fermées et barrées avec les deux loquets.</label></li>
+        <li><label data-i18n-html="checklist.items.4"><input type="checkbox" data-key="dishwasher" /> S’assurer que le lave-vaisselle soit parti si vous l’avez utilisé (nous l’<em>viderons</em>). <strong>Ne JAMAIS</strong> utiliser de savon à vaisselle régulier dans le lave-vaisselle.</label></li>
+        <li><label data-i18n-html="checklist.items.5"><input type="checkbox" data-key="linens" /> Laisser les draps utilisés sur les lits et les serviettes utilisées par terre dans les salles de bain.</label></li>
+        <li><label data-i18n-html="checklist.items.6"><input type="checkbox" data-key="heating-winter" /> <strong>Octobre à mai (HIVER)</strong> : remettre tous les thermostats du sous-sol et du 1<sup>er</sup> étage à <strong>15</strong> (ils peuvent rester à 0 au 3<sup>e</sup>). Les 2 calorifères du côté du lac dans la pièce principale doivent être à <strong>ON</strong> et au réglage <strong>(*)</strong>. Les autres calorifères (sous-sol et salle soleil) doivent rester fermés.</label></li>
+        <li><label data-i18n-html="checklist.items.7"><input type="checkbox" data-key="trash" /> Vider toutes les poubelles et jeter les sacs dans les bacs à l’intérieur de l’abri à la rue. Si les bacs sont pleins, apporter à l’éco-centre (214 Chemin du Long de la Rivière, près de Patrick Morin; ouverts tous les jours sauf dimanche et lundi).</label></li>
+        <li><label data-i18n-html="checklist.items.8"><input type="checkbox" data-key="guardian-locked" /> S’assurer que les <em>guardian locks</em> soient en position verrouillée sur toutes les portes au rez-de-chaussée et au 1<sup>er</sup> (sauf la porte d’entrée).</label></li>
+      </ul>
+    </section>
+
+    <section id="serrures" class="card" aria-labelledby="serrures-title">
+      <h2 id="serrures-title" data-i18n="serrures.title">Serrure et portes</h2>
+      <ul>
+        <li data-i18n="serrures.li1">Pour entrer : utiliser le code fourni, puis appuyer sur la coche.</li>
+        <li data-i18n="serrures.li2">Pour barrer : appuyer sur <strong>Yale</strong> (et vérifier).</li>
+      </ul>
+    </section>
+
+    <section id="locks" class="card" aria-labelledby="locks-title">
+      <h2 id="locks-title" data-i18n="locks.title">Guardian Locks / Fliplock</h2>
+      <p data-i18n="locks.p1">Toutes les portes sont équipées de « guardian locks » contre les intrus et pour empêcher les enfants de sortir sans qu’on s’en rende compte.</p>
+      <p data-i18n-html="locks.p2">Si vous avez du mal à ouvrir : <a href=\"https://tinyurl.com/lockguardhow\" target=\"_blank\" rel=\"noopener\">instructions rapides (guardian)</a>.</p>
+      <p data-i18n-html="locks.p3">Pour la porte vers la salle de soleil : <a href=\"https://tinyurl.com/lockfliphow\" target=\"_blank\" rel=\"noopener\">instructions Fliplock</a>.</p>
+    </section>
+
+    <section id="internet" class="card" aria-labelledby="internet-title">
+      <h2 id="internet-title" data-i18n="internet.title">Internet & Télé</h2>
+      <ul>
+        <li data-i18n-html="internet.li1"><strong>Réseau Wi‑Fi</strong> : <code>Colibri</code> — <strong>Mot de passe</strong> : <code>chalet770</code></li>
+        <li data-i18n="internet.li2">Mettre le subwoofer à ON (derrière).</li>
+        <li data-i18n="internet.li3">Ouvrir la télé (grande manette Samsung) et le Fire TV Stick (manette « Netflix »).</li>
+        <li data-i18n="internet.li4">Ouvrir la barre de son (petite manette Samsung). Sur la télé, changer la source jusqu’à ce que le Firestick apparaisse. Barre de son sur HDMI 1.</li>
+        <li data-i18n="internet.li5">Choisir l’avatar CHALET (Netflix ou Amazon Prime).</li>
+        <li data-i18n-html="internet.li6">Location de films sur Prime : possible avec un code. <a href=\"tel:+16154952944\">Textez 615 495 2944</a> pour voir si disponible (remboursement requis; sans garantie).</li>
+      </ul>
+    </section>
+
+    <section id="urgences" class="card" aria-labelledby="urgences-title">
+      <h2 id="urgences-title" data-i18n="urgences.title">Urgences</h2>
+      <ul>
+        <li data-i18n="urgences.li0">Pas de ligne téléphonique — utiliser votre cellulaire.</li>
+        <li data-i18n-html="urgences.li1">Composer <a href=\"tel:*4141\"><strong>*4141</strong></a> en cas d’urgence.</li>
+        <li data-i18n-html="urgences.li2">Police — poste principal Rawdon : <a href=\"tel:+14508342578\">450 834-2578</a>; poste secondaire St‑Donat : <a href=\"tel:+18194244617\">819 424-4617</a></li>
+        <li data-i18n-html="urgences.li3">Clinique du village : <a href=\"tel:+18194190123\">819-419-0123</a></li>
+        <li data-i18n-html="urgences.li4">Services Santé Laurentides : <a href=\"tel:+14505431175\">450-543-1175</a></li>
+        <li data-i18n-html="urgences.li5">Clinique de Santé St‑Donat : <a href=\"tel:+18194242793\">819-424-2793</a></li>
+        <li data-i18n-html="urgences.li6">Contact — Isabel Gauthier : <a href=\"tel:+16154952944\">615-495-2944</a> (texte préférable) · <a href=\"mailto:isabel.gauthier@vanderbilt.edu\">isabel.gauthier@vanderbilt.edu</a></li>
+      </ul>
+    </section>
+
+    <section id="kayak" class="card" aria-labelledby="kayak-title">
+      <h2 id="kayak-title" data-i18n="kayak.title">Kayak (été)</h2>
+      <p data-i18n="kayak.p1">Kayak 2 places sous le deck (assez lourd — il faut être 2).</p>
+      <ul>
+        <li data-i18n="kayak.li1">Clé à tête noire en plastique — dans l’étagère vitrée de la cuisine.</li>
+        <li data-i18n="kayak.li2">Pagaies — dans la remise sous le deck.</li>
+        <li data-i18n="kayak.li3">Vestes de sauvetage — dans la salle de bain du bas.</li>
+        <li data-i18n="kayak.li4">Après usage : tout remettre à sa place et bien verrouiller le kayak.</li>
+      </ul>
+    </section>
+
+    <section id="rando" class="card" aria-labelledby="rando-title">
+      <h2 id="rando-title" data-i18n="rando.title">Randonnée pédestre</h2>
+      <p data-i18n="rando.p1">Plusieurs belles randonnées à St‑Donat. La plus proche : <strong>Mont Sourire</strong>.</p>
+      <p data-i18n="rando.p2">À la route, marcher vers la droite jusqu’à la première entrée à gauche. Continuer ~5 min, l’entrée est à droite (évident; stationnement). Montée modérée, 25–30 min jusqu’au superbe point de vue.</p>
+    </section>
+
+    <section id="grill" class="card" aria-labelledby="grill-title">
+      <h2 id="grill-title" data-i18n="grill.title">Grill / BBQ</h2>
+      <ul>
+        <li data-i18n="grill.li1">Grill sur le deck — utilisable librement.</li>
+        <li data-i18n="grill.li2">Si la bonbonne est vide, la remplir au village.</li>
+        <li data-i18n="grill.li3"><strong>Nettoyer légèrement après usage</strong>.</li>
+      </ul>
+    </section>
+
+    <section id="foyer" class="card" aria-labelledby="foyer-title">
+      <h2 id="foyer-title" data-i18n="foyer.title">Foyer</h2>
+      <ul>
+        <li data-i18n="foyer.li1">Foyers à l’intérieur et sur la plage.</li>
+        <li data-i18n="foyer.li2">Bûches supplémentaires dehors (merci d’en laisser quelques‑unes à l’intérieur si vous en prenez).</li>
+        <li data-i18n="foyer.li3">Bois d’allumage — bac dans la salle d’entrée.</li>
+        <li data-i18n="foyer.li4"><strong>Jamais</strong> de cendres dans les poubelles régulières.</li>
+      </ul>
+    </section>
+
+    <section id="eau" class="card" aria-labelledby="eau-title">
+      <h2 id="eau-title" data-i18n="eau.title">Eau</h2>
+      <ul>
+        <li data-i18n="eau.li1">L’eau du robinet est <strong>potable</strong>.</li>
+        <li data-i18n="eau.li2">Distributrice d’eau (salle d’entrée) : si vous prenez une bouteille, merci de la remplacer (ramener la vide au Metro pour la consigne de 10 $, en acheter une nouvelle et la remettre au même endroit).</li>
+        <li data-i18n="eau.li3">Eau chaude pour breuvages : bouton rouge à l’arrière de la machine.</li>
+      </ul>
+    </section>
+
+    <section id="panne" class="card" aria-labelledby="panne-title">
+      <h2 id="panne-title" data-i18n="panne.title">Panne d’électricité</h2>
+      <ul>
+        <li data-i18n="panne.li1">Les toilettes ne fonctionnent pas (pompe à eau électrique).</li>
+        <li data-i18n="panne.li2">Deux bouteilles d’eau non potable dans la salle d’entrée pour « flusher ».</li>
+      </ul>
+    </section>
+
+    <section id="dechets" class="card" aria-labelledby="dechets-title">
+      <h2 id="dechets-title" data-i18n="dechets.title">Poubelles / Recyclage / Compost</h2>
+      <p data-i18n="dechets.p1">Vider toutes les poubelles et déposer dans les bacs de l’abri à la rue. Si plein : éco‑centre (214 Chemin du Long de la Rivière; ouvert tous les jours sauf dimanche et lundi).</p>
+      <h3 data-i18n="dechets.h3r">Recyclage — bac bleu</h3>
+      <ul>
+        <li data-i18n="dechets.liR1">Verre, carton (boîtes dépliées), papier, plastique, aluminium, conserves.</li>
+      </ul>
+      <h3 data-i18n="dechets.h3c">Compost — bac brun</h3>
+      <ul>
+        <li data-i18n="dechets.liC1">Résidus alimentaires; résidus verts de jardin.</li>
+        <li data-i18n="dechets.liC2">Papier/carton souillé.</li>
+        <li data-i18n="dechets.liC3">Autres matières : marc de café, sachets de thé, copeaux de bois (non traités), cendres refroidies (depuis ≥ 4 semaines).</li>
+      </ul>
+      <p class="muted" data-i18n-html="dechets.note"><strong>Utilisez des sacs en papier / journal</strong> ou mettez en vrac. <strong>Pas de sacs de plastique compostables.</strong></p>
+    </section>
+
+    <section id="cuisine" class="card" aria-labelledby="cuisine-title">
+      <h2 id="cuisine-title" data-i18n="cuisine.title">Cuisine</h2>
+      <ul>
+        <li data-i18n="cuisine.li1">Quelques pods Keurig disponibles; cafetière filtre (filtres dans la cache à pain).</li>
+        <li data-i18n="cuisine.li2">À droite du frigo (armoire) : assortiment de thés et tisanes.</li>
+        <li data-i18n="cuisine.li3">Les éléments dans les bacs blancs sont à votre disposition.</li>
+        <li data-i18n="cuisine.li4">Si vous brisez quelque chose, merci de m’en informer.</li>
+      </ul>
+    </section>
+
+    <section id="laveuse" class="card" aria-labelledby="laveuse-title">
+      <h2 id="laveuse-title" data-i18n="laveuse.title">Laveuse / Sécheuse</h2>
+      <ul>
+        <li data-i18n="laveuse.li1">Laveuse : bouton de gauche pour ON, bouton de droite jusqu’à ce que les lumières aillent à droite; relâcher (vous l’entendrez se barrer avant le démarrage).</li>
+        <li data-i18n-html="laveuse.li2">Vidéo d’instructions : <a href=\"https://www.youtube.com/watch?v=1y-QQjH6DIs\" target=\"_blank\" rel=\"noopener\">voir sur YouTube</a>.</li>
+        <li data-i18n="laveuse.li3">Après le séchage, mettre la peluche dans le sac Ziploc.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p data-i18n="footer.copy">&copy; Maison Rouge · Guide invités</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
