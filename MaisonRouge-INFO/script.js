@@ -11,6 +11,8 @@ const I18N = {
     "start.optApporter.p": "Utile pour séjours prolongés",
     "start.optMenu.h3": "Menu — autres infos",
     "start.optMenu.p": "Voir toutes les sections",
+    "referral.title": "Note",
+    "referral.body": "Si vous référez quelqu’un qui réserve et qu’il me mentionne que c’est grâce à vous, je vous enverrai 50 $ :-)",
     "menu.title": "Menu — Autres informations",
     "nav.checklist": "Checklist départ",
     "nav.apporter": "À apporter",
@@ -31,6 +33,8 @@ const I18N = {
     "checklist.title": "À votre départ — <span class='pill'>IMPORTANT</span>",
     "checklist.reset": "Tout décocher",
     "checklist.hint": "Ceci est une liste <strong>interactive</strong> : touchez pour cocher. Vos choix restent enregistrés sur votre téléphone (localement).",
+    "dl.fr": "Télécharger la checklist (PDF — FR)",
+    "dl.en": "Checklist en anglais (PDF — EN)",
     "checklist.items.0": " <input type='checkbox' data-key='reset-state' /> Remettre la Maison Rouge dans le même état et replacer les objets, meubles et jouets au même endroit où vous les avez trouvés.",
     "checklist.items.1": " <input type='checkbox' data-key='fireplace-ashes' /> Vérifier que le feu du foyer soit complètement éteint avant votre départ. <strong>Ne JAMAIS</strong> mettre de cendres dans les poubelles régulières. Utilisez la poubelle noire à cendres dehors (juste pour les cendres, rien d’autre).",
     "checklist.items.2": " <input type='checkbox' data-key='fridge' /> Vérifier que le réfrigérateur soit vide.",
@@ -115,9 +119,7 @@ const I18N = {
     "laveuse.li1": "Laveuse : bouton de gauche pour ON, bouton de droite jusqu’à ce que les lumières aillent à droite; relâcher (vous l’entendrez se barrer avant le démarrage).",
     "laveuse.li2": "Vidéo d’instructions : <a href='https://www.youtube.com/watch?v=1y-QQjH6DIs' target='_blank' rel='noopener'>voir sur YouTube</a>.",
     "laveuse.li3": "Après le séchage, mettre la peluche dans le sac Ziploc.",
-    "footer.copy": "© Maison Rouge · Guide invités",
-    "dl.fr": "Télécharger la checklist (PDF — FR)",
-    "dl.en": "Checklist en anglais (PDF — EN)"
+    "footer.copy": "© Maison Rouge · Guide invités"
   },
   en: {
     "meta.title": "Maison Rouge – Guest Guide",
@@ -130,6 +132,8 @@ const I18N = {
     "start.optApporter.p": "Useful for longer stays",
     "start.optMenu.h3": "Menu — other info",
     "start.optMenu.p": "See all sections",
+    "referral.title": "Note",
+    "referral.body": "If you refer someone who books and they tell me it was thanks to you, I’ll send you $50 :-)",
     "menu.title": "Menu — Other information",
     "nav.checklist": "Departure checklist",
     "nav.apporter": "Packing list",
@@ -150,6 +154,8 @@ const I18N = {
     "checklist.title": "Before you leave — <span class='pill'>IMPORTANT</span>",
     "checklist.reset": "Uncheck all",
     "checklist.hint": "This is an <strong>interactive</strong> list: tap to check items. Your choices are saved on your phone (locally).",
+    "dl.fr": "Checklist in French (PDF — FR)",
+    "dl.en": "Download checklist (PDF — EN)",
     "checklist.items.0": " <input type='checkbox' data-key='reset-state' /> Reset the house to its original state and put objects, furniture, and toys back where you found them.",
     "checklist.items.1": " <input type='checkbox' data-key='fireplace-ashes' /> Make sure any fire is completely out before you leave. <strong>Never</strong> put ashes in regular trash. Use the black outdoor ash bin (for ashes only).",
     "checklist.items.2": " <input type='checkbox' data-key='fridge' /> Empty the refrigerator.",
@@ -175,7 +181,7 @@ const I18N = {
     "internet.li3": "Turn on the TV (big Samsung remote) and the Fire TV Stick (remote with “Netflix”).",
     "internet.li4": "Turn on the soundbar (small Samsung remote). On the TV, change the <strong>source</strong> until the Firestick appears. Soundbar on <strong>HDMI 1</strong>.",
     "internet.li5": "Choose the <strong>CHALET</strong> profile (Netflix or Amazon Prime).",
-    "internet.li6": "Movie rentals on Prime: available <strong>only if I’m available to help</strong>. <a href='tel:+16154952944'>Text 615-495-2944</a> (<em>please text</em>) to ask if available (reimbursement required; not guaranteed).",
+    "internet.li6": "Movie rentals on Prime: available <strong>only if I’m available to help</strong>. <a href='tel:+16154952944'>Text 615 495 2944</a> (<em>please text</em>) to ask if available (reimbursement required; not guaranteed).",
     "serrures.title": "Locks & doors",
     "serrures.li1": "To enter: use the code provided, then press the checkmark.",
     "serrures.li2": "To lock: press <strong>Yale</strong> (and verify).",
@@ -234,9 +240,7 @@ const I18N = {
     "laveuse.li1": "Washer: left knob to ON, right knob until the lights move to the right; release (you’ll hear it lock before starting).",
     "laveuse.li2": "How-to video: <a href='https://www.youtube.com/watch?v=1y-QQjH6DIs' target='_blank' rel='noopener'>see on YouTube</a>.",
     "laveuse.li3": "After drying, put the lint in the Ziploc bag.",
-    "footer.copy": "© Maison Rouge · Guest guide",
-    "dl.fr": "Checklist in French (PDF — FR)",
-    "dl.en": "Download checklist (PDF — EN)"
+    "footer.copy": "© Maison Rouge · Guest guide"
   }
 };
 

@@ -49,6 +49,11 @@ body {
   box-shadow: 0 1px 0 rgba(0,0,0,0.02);
 }
 
+.card.note {
+  border-left: 4px solid var(--accent);
+  background: #fff8f8;
+}
+
 .card-header {
   display: flex; align-items: center; gap: 12px; justify-content: space-between;
   margin-bottom: 8px;
@@ -74,11 +79,15 @@ button, .btn {
   border-radius: 10px;
   cursor: pointer;
 }
-button.secondary {
+button.secondary, .btn.secondary {
   background: #f0f2f7;
   color: var(--text);
   border: 1px solid var(--border);
 }
+
+/* Download row */
+.download-row { display:flex; gap:8px; flex-wrap:wrap; margin: 6px 0 10px; }
+.download-row .btn { padding: 6px 10px; }
 
 .highlight {
   border: 2px solid var(--accent);
@@ -139,7 +148,3 @@ h3 { margin-bottom: 6px; }
 
 /* Footer */
 .site-footer { padding: 40px 0; color: var(--muted); font-size: 0.9rem; }
-
-.download-row { display:flex; gap:8px; flex-wrap:wrap; margin: 6px 0 8px; }
-.download-row .btn { padding: 6px 10px; }
-
