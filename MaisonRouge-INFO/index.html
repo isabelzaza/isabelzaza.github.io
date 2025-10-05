@@ -13,11 +13,7 @@
       <h1 data-i18n="header.title">Maison Rouge – Guide des Invités</h1>
 
       <div class="lang-switch">
-        <label for="langSwitch" class="visually-hidden" data-i18n="a11y.language">Langue</label>
-        <select id="langSwitch" aria-label="Language">
-          <option value="fr">FR</option>
-          <option value="en">EN</option>
-        </select>
+        <button id="langToggleBtn" aria-label="Changer de langue">ENGLISH</button>
       </div>
 
       <button id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="siteNav">☰</button>
@@ -41,6 +37,42 @@
   </header>
 
   <main class="container">
+    <!-- Landing section with two big options -->
+    <section id="start" class="card start" aria-labelledby="start-title">
+      <h2 id="start-title" data-i18n="start.title">Bienvenue — Choisissez une option</h2>
+      <div class="start-grid">
+        <a href="#checklist" class="start-card important">
+          <h3 data-i18n="start.optChecklist.h3">Checklist départ</h3>
+          <p data-i18n="start.optChecklist.p">Important & lecture requise</p>
+        </a>
+        <a href="#menu" class="start-card">
+          <h3 data-i18n="start.optMenu.h3">Menu — autres infos</h3>
+          <p data-i18n="start.optMenu.p">Voir toutes les sections</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- A dedicated Menu section for mobile discoverability -->
+    <section id="menu" class="card" aria-labelledby="menu-title">
+      <h2 id="menu-title" data-i18n="menu.title">Menu — Autres informations</h2>
+      <ul class="menu-links">
+        <li><a href="#checklist" data-i18n="nav.checklist">Checklist départ</a></li>
+        <li><a href="#serrures" data-i18n="nav.serrures">Serrures & portes</a></li>
+        <li><a href="#locks" data-i18n="nav.locks">Guardian Locks / Fliplock</a></li>
+        <li><a href="#internet" data-i18n="nav.internet">Internet & Télé</a></li>
+        <li><a href="#urgences" data-i18n="nav.urgences">Urgences</a></li>
+        <li><a href="#kayak" data-i18n="nav.kayak">Kayak</a></li>
+        <li><a href="#rando" data-i18n="nav.rando">Randonnée</a></li>
+        <li><a href="#grill" data-i18n="nav.grill">Grill / BBQ</a></li>
+        <li><a href="#foyer" data-i18n="nav.foyer">Foyer</a></li>
+        <li><a href="#eau" data-i18n="nav.eau">Eau</a></li>
+        <li><a href="#panne" data-i18n="nav.panne">Panne d’électricité</a></li>
+        <li><a href="#dechets" data-i18n="nav.dechets">Poubelles / Recyclage / Compost</a></li>
+        <li><a href="#cuisine" data-i18n="nav.cuisine">Cuisine</a></li>
+        <li><a href="#laveuse" data-i18n="nav.laveuse">Laveuse / Sécheuse</a></li>
+      </ul>
+    </section>
+
     <section id="checklist" class="card highlight" aria-labelledby="checklist-title">
       <div class="card-header">
         <h2 id="checklist-title" data-i18n-html="checklist.title">À votre départ — <span class=\"pill\">IMPORTANT</span></h2>
@@ -74,20 +106,20 @@
 
     <section id="locks" class="card" aria-labelledby="locks-title">
       <h2 id="locks-title" data-i18n="locks.title">Guardian Locks / Fliplock</h2>
-      <p data-i18n="locks.p1">Toutes les portes sont équipées de « guardian locks » contre les intrus et pour empêcher les enfants de sortir sans qu’on s’en rende compte.</p>
-      <p data-i18n-html="locks.p2">Si vous avez du mal à ouvrir : <a href=\"https://tinyurl.com/lockguardhow\" target=\"_blank\" rel=\"noopener\">instructions rapides (guardian)</a>.</p>
-      <p data-i18n-html="locks.p3">Pour la porte vers la salle de soleil : <a href=\"https://tinyurl.com/lockfliphow\" target=\"_blank\" rel=\"noopener\">instructions Fliplock</a>.</p>
+      <p data-i18n="locks.p1">Toutes les portes sont équipées de « guardian locks » contre les intrus et pour empêcher les enfants de sortir sans qu’on s’en rende compte.</p>
+      <p data-i18n-html="locks.p2">Si vous avez du mal à ouvrir : <a href=\"https://tinyurl.com/lockguardhow\" target=\"_blank\" rel=\"noopener\">instructions rapides (guardian)</a>.</p>
+      <p data-i18n-html="locks.p3">Pour la porte vers la salle de soleil : <a href=\"https://tinyurl.com/lockfliphow\" target=\"_blank\" rel=\"noopener\">instructions Fliplock</a>.</p>
     </section>
 
     <section id="internet" class="card" aria-labelledby="internet-title">
       <h2 id="internet-title" data-i18n="internet.title">Internet & Télé</h2>
       <ul>
-        <li data-i18n-html="internet.li1"><strong>Réseau Wi‑Fi</strong> : <code>Colibri</code> — <strong>Mot de passe</strong> : <code>chalet770</code></li>
+        <li data-i18n-html="internet.li1"><strong>Réseau Wi-Fi</strong> : <code>Colibri</code> — <strong>Mot de passe</strong> : <code>chalet770</code></li>
         <li data-i18n="internet.li2">Mettre le subwoofer à ON (derrière).</li>
-        <li data-i18n="internet.li3">Ouvrir la télé (grande manette Samsung) et le Fire TV Stick (manette « Netflix »).</li>
-        <li data-i18n="internet.li4">Ouvrir la barre de son (petite manette Samsung). Sur la télé, changer la source jusqu’à ce que le Firestick apparaisse. Barre de son sur HDMI 1.</li>
+        <li data-i18n="internet.li3">Ouvrir la télé (grande manette Samsung) et le Fire TV Stick (manette « Netflix »).</li>
+        <li data-i18n="internet.li4">Ouvrir la barre de son (petite manette Samsung). Sur la télé, changer la source jusqu’à ce que le Firestick apparaisse. Barre de son sur HDMI 1.</li>
         <li data-i18n="internet.li5">Choisir l’avatar CHALET (Netflix ou Amazon Prime).</li>
-        <li data-i18n-html="internet.li6">Location de films sur Prime : possible avec un code. <a href=\"tel:+16154952944\">Textez 615 495 2944</a> pour voir si disponible (remboursement requis; sans garantie).</li>
+        <li data-i18n-html="internet.li6">Location de films sur Prime : possible <strong>seulement si je suis disponible pour aider</strong>. <a href=\"tel:+16154952944\">Textez 615 495 2944</a> pour voir si disponible (remboursement requis; sans garantie).</li>
       </ul>
     </section>
 
@@ -96,11 +128,11 @@
       <ul>
         <li data-i18n="urgences.li0">Pas de ligne téléphonique — utiliser votre cellulaire.</li>
         <li data-i18n-html="urgences.li1">Composer <a href=\"tel:*4141\"><strong>*4141</strong></a> en cas d’urgence.</li>
-        <li data-i18n-html="urgences.li2">Police — poste principal Rawdon : <a href=\"tel:+14508342578\">450 834-2578</a>; poste secondaire St‑Donat : <a href=\"tel:+18194244617\">819 424-4617</a></li>
-        <li data-i18n-html="urgences.li3">Clinique du village : <a href=\"tel:+18194190123\">819-419-0123</a></li>
-        <li data-i18n-html="urgences.li4">Services Santé Laurentides : <a href=\"tel:+14505431175\">450-543-1175</a></li>
-        <li data-i18n-html="urgences.li5">Clinique de Santé St‑Donat : <a href=\"tel:+18194242793\">819-424-2793</a></li>
-        <li data-i18n-html="urgences.li6">Contact — Isabel Gauthier : <a href=\"tel:+16154952944\">615-495-2944</a> (texte préférable) · <a href=\"mailto:isabel.gauthier@vanderbilt.edu\">isabel.gauthier@vanderbilt.edu</a></li>
+        <li data-i18n-html="urgences.li2">Police — poste principal Rawdon : <a href=\"tel:+14508342578\">450 834-2578</a>; poste secondaire St-Donat : <a href=\"tel:+18194244617\">819 424-4617</a></li>
+        <li data-i18n-html="urgences.li3">Clinique du village : <a href=\"tel:+18194190123\">819-419-0123</a></li>
+        <li data-i18n-html="urgences.li4">Services Santé Laurentides : <a href=\"tel:+14505431175\">450-543-1175</a></li>
+        <li data-i18n-html="urgences.li5">Clinique de Santé St-Donat : <a href=\"tel:+18194242793\">819-424-2793</a></li>
+        <li data-i18n-html="urgences.li6">Contact — Isabel Gauthier : <a href=\"tel:+16154952944\">615-495-2944</a> (texte préférable) · <a href=\"mailto:isabel.gauthier@vanderbilt.edu\">isabel.gauthier@vanderbilt.edu</a></li>
       </ul>
     </section>
 
@@ -111,13 +143,13 @@
         <li data-i18n="kayak.li1">Clé à tête noire en plastique — dans l’étagère vitrée de la cuisine.</li>
         <li data-i18n="kayak.li2">Pagaies — dans la remise sous le deck.</li>
         <li data-i18n="kayak.li3">Vestes de sauvetage — dans la salle de bain du bas.</li>
-        <li data-i18n="kayak.li4">Après usage : tout remettre à sa place et bien verrouiller le kayak.</li>
+        <li data-i18n="kayak.li4">Après usage : tout remettre à sa place et bien verrouiller le kayak.</li>
       </ul>
     </section>
 
     <section id="rando" class="card" aria-labelledby="rando-title">
       <h2 id="rando-title" data-i18n="rando.title">Randonnée pédestre</h2>
-      <p data-i18n="rando.p1">Plusieurs belles randonnées à St‑Donat. La plus proche : <strong>Mont Sourire</strong>.</p>
+      <p data-i18n="rando.p1">Plusieurs belles randonnées à St-Donat. La plus proche : <strong>Mont Sourire</strong>.</p>
       <p data-i18n="rando.p2">À la route, marcher vers la droite jusqu’à la première entrée à gauche. Continuer ~5 min, l’entrée est à droite (évident; stationnement). Montée modérée, 25–30 min jusqu’au superbe point de vue.</p>
     </section>
 
@@ -134,7 +166,7 @@
       <h2 id="foyer-title" data-i18n="foyer.title">Foyer</h2>
       <ul>
         <li data-i18n="foyer.li1">Foyers à l’intérieur et sur la plage.</li>
-        <li data-i18n="foyer.li2">Bûches supplémentaires dehors (merci d’en laisser quelques‑unes à l’intérieur si vous en prenez).</li>
+        <li data-i18n="foyer.li2">Bûches supplémentaires dehors (merci d’en laisser quelques-unes à l’intérieur si vous en prenez).</li>
         <li data-i18n="foyer.li3">Bois d’allumage — bac dans la salle d’entrée.</li>
         <li data-i18n="foyer.li4"><strong>Jamais</strong> de cendres dans les poubelles régulières.</li>
       </ul>
@@ -144,8 +176,8 @@
       <h2 id="eau-title" data-i18n="eau.title">Eau</h2>
       <ul>
         <li data-i18n="eau.li1">L’eau du robinet est <strong>potable</strong>.</li>
-        <li data-i18n="eau.li2">Distributrice d’eau (salle d’entrée) : si vous prenez une bouteille, merci de la remplacer (ramener la vide au Metro pour la consigne de 10 $, en acheter une nouvelle et la remettre au même endroit).</li>
-        <li data-i18n="eau.li3">Eau chaude pour breuvages : bouton rouge à l’arrière de la machine.</li>
+        <li data-i18n="eau.li2">Distributrice d’eau (salle d’entrée) : si vous prenez une bouteille, merci de la remplacer (ramener la vide au Metro pour la consigne de 10 $, en acheter une nouvelle et la remettre au même endroit).</li>
+        <li data-i18n="eau.li3">Eau chaude pour breuvages : bouton rouge à l’arrière de la machine.</li>
       </ul>
     </section>
 
@@ -153,13 +185,13 @@
       <h2 id="panne-title" data-i18n="panne.title">Panne d’électricité</h2>
       <ul>
         <li data-i18n="panne.li1">Les toilettes ne fonctionnent pas (pompe à eau électrique).</li>
-        <li data-i18n="panne.li2">Deux bouteilles d’eau non potable dans la salle d’entrée pour « flusher ».</li>
+        <li data-i18n="panne.li2">Deux bouteilles d’eau non potable dans la salle d’entrée pour « flusher ».</li>
       </ul>
     </section>
 
     <section id="dechets" class="card" aria-labelledby="dechets-title">
       <h2 id="dechets-title" data-i18n="dechets.title">Poubelles / Recyclage / Compost</h2>
-      <p data-i18n="dechets.p1">Vider toutes les poubelles et déposer dans les bacs de l’abri à la rue. Si plein : éco‑centre (214 Chemin du Long de la Rivière; ouvert tous les jours sauf dimanche et lundi).</p>
+      <p data-i18n="dechets.p1">Vider toutes les poubelles et déposer dans les bacs de l’abri à la rue. Si plein : éco-centre (214 Chemin du Long de la Rivière; ouvert tous les jours sauf dimanche et lundi).</p>
       <h3 data-i18n="dechets.h3r">Recyclage — bac bleu</h3>
       <ul>
         <li data-i18n="dechets.liR1">Verre, carton (boîtes dépliées), papier, plastique, aluminium, conserves.</li>
@@ -168,7 +200,7 @@
       <ul>
         <li data-i18n="dechets.liC1">Résidus alimentaires; résidus verts de jardin.</li>
         <li data-i18n="dechets.liC2">Papier/carton souillé.</li>
-        <li data-i18n="dechets.liC3">Autres matières : marc de café, sachets de thé, copeaux de bois (non traités), cendres refroidies (depuis ≥ 4 semaines).</li>
+        <li data-i18n="dechets.liC3">Autres matières : marc de café, sachets de thé, copeaux de bois (non traités), cendres refroidies (depuis ≥ 4 semaines).</li>
       </ul>
       <p class="muted" data-i18n-html="dechets.note"><strong>Utilisez des sacs en papier / journal</strong> ou mettez en vrac. <strong>Pas de sacs de plastique compostables.</strong></p>
     </section>
@@ -177,7 +209,7 @@
       <h2 id="cuisine-title" data-i18n="cuisine.title">Cuisine</h2>
       <ul>
         <li data-i18n="cuisine.li1">Quelques pods Keurig disponibles; cafetière filtre (filtres dans la cache à pain).</li>
-        <li data-i18n="cuisine.li2">À droite du frigo (armoire) : assortiment de thés et tisanes.</li>
+        <li data-i18n="cuisine.li2">À droite du frigo (armoire) : assortiment de thés et tisanes.</li>
         <li data-i18n="cuisine.li3">Les éléments dans les bacs blancs sont à votre disposition.</li>
         <li data-i18n="cuisine.li4">Si vous brisez quelque chose, merci de m’en informer.</li>
       </ul>
@@ -186,8 +218,8 @@
     <section id="laveuse" class="card" aria-labelledby="laveuse-title">
       <h2 id="laveuse-title" data-i18n="laveuse.title">Laveuse / Sécheuse</h2>
       <ul>
-        <li data-i18n="laveuse.li1">Laveuse : bouton de gauche pour ON, bouton de droite jusqu’à ce que les lumières aillent à droite; relâcher (vous l’entendrez se barrer avant le démarrage).</li>
-        <li data-i18n-html="laveuse.li2">Vidéo d’instructions : <a href=\"https://www.youtube.com/watch?v=1y-QQjH6DIs\" target=\"_blank\" rel=\"noopener\">voir sur YouTube</a>.</li>
+        <li data-i18n="laveuse.li1">Laveuse : bouton de gauche pour ON, bouton de droite jusqu’à ce que les lumières aillent à droite; relâcher (vous l’entendrez se barrer avant le démarrage).</li>
+        <li data-i18n-html="laveuse.li2">Vidéo d’instructions : <a href=\"https://www.youtube.com/watch?v=1y-QQjH6DIs\" target=\"_blank\" rel=\"noopener\">voir sur YouTube</a>.</li>
         <li data-i18n="laveuse.li3">Après le séchage, mettre la peluche dans le sac Ziploc.</li>
       </ul>
     </section>

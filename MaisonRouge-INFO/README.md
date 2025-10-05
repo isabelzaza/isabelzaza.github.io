@@ -1,20 +1,17 @@
-# Maison Rouge – Guide (FR/EN) for GitHub Pages
+# Maison Rouge – Guide (FR/EN) — v2
 
-This folder contains a small **static website** with a **language toggle (FR/EN)** and a **tap-to-check** departure checklist that persists on each guest’s device.
+Changes requested:
+1. **Default language = French**, with a single toggle button labeled **ENGLISH** (switches to FRANÇAIS when in EN).
+2. **Landing section** with two large choices: (a) **Departure checklist — important & required reading**, (b) **Menu for other info** (links to every section for mobile discoverability).
+3. **Movie rental** copy clarified (only if owner is available to help), in both FR and EN.
 
 ## Files
-- `index.html` — structure and content (with i18n hooks).
-- `style.css` — responsive styles.
-- `script.js` — language logic (saved preference), checklist persistence, and menu behavior.
-- `README.md` — this file.
+- `index.html`
+- `style.css`
+- `script.js`
+- `README.md`
 
 ## Deploy on GitHub Pages
-1. Create a public repo (e.g., `maison-rouge`).
-2. Upload all files to the repo root and commit.
-3. In **Settings → Pages**: set **Build and deployment** = *Deploy from a branch*, pick **main / root**, **Save**.
-4. Share the Pages URL with your guests.
-
-### Notes
-- **Language preference** is stored in `localStorage` under `maisonrouge:lang`.
-- **Checklist** state is stored under keys like `maisonrouge:fridge`, per browser/device.
-- Section anchors (`#checklist`, `#serrures`, etc.) stay stable across languages; only visible labels change.
+1. Create a public repo (or reuse your existing one).
+2. Upload these files to the repo root and commit.
+3. Settings → Pages → *Deploy from a branch* → Branch **main**, folder **/** → **Save**.
