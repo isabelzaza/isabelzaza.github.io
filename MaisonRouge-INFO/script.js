@@ -3,6 +3,8 @@ const I18N = {
   fr: {
     "meta.title": "Maison Rouge – Guide des Invités",
     "meta.description": "Informations pour les invités de la Maison Rouge : checklist de départ, à apporter, serrures, internet et télé, urgences, déshumidificateur, kayak, randonnées, grill, foyer, eau, pannes, déchets, cuisine, laveuse/sécheuse.",
+"referral.title": "Note",
+"referral.body": "Si vous référez quelqu’un qui réserve et qu’il me mentionne que c’est grâce à vous, je vous enverrai 50 $ :-)",
     "header.title": "Maison Rouge – Guide des Invités",
     "start.title": "Bienvenue — Choisissez une option",
     "start.optChecklist.h3": "Checklist départ",
@@ -125,6 +127,8 @@ const I18N = {
     "meta.title": "Maison Rouge – Guest Guide",
     "meta.description": "Information for guests at Maison Rouge: departure checklist, packing list, locks, internet & TV, emergencies, dehumidifier, kayak, hikes, grill, fireplace, water, power outages, waste, kitchen, washer/dryer.",
     "header.title": "Maison Rouge – Guest Guide",
+"referral.title": "Note",
+"referral.body": "If you refer someone who books and they tell me it was thanks to you, I’ll send you $50 :-)",
     "start.title": "Welcome — Choose an option",
     "start.optChecklist.h3": "Departure checklist",
     "start.optChecklist.p": "Important & required reading",
