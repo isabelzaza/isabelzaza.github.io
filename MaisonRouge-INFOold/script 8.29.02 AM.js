@@ -3,6 +3,8 @@ const I18N = {
   fr: {
     "meta.title": "Maison Rouge – Guide des Invités",
     "meta.description": "Informations pour les invités de la Maison Rouge : checklist de départ, à apporter, serrures, internet et télé, urgences, déshumidificateur, kayak, randonnées, grill, foyer, eau, pannes, déchets, cuisine, laveuse/sécheuse.",
+"referral.title": "Note",
+"referral.body": "Si vous référez quelqu’un qui réserve et qu’il me mentionne que c’est grâce à vous, je vous enverrai 50 $ :-)",
     "header.title": "Maison Rouge – Guide des Invités",
     "start.title": "Bienvenue — Choisissez une option",
     "start.optChecklist.h3": "Checklist départ",
@@ -45,8 +47,6 @@ const I18N = {
     "checklist.items.7": " <input type='checkbox' data-key='trash' /> Vider toutes les poubelles et jeter les sacs dans les bacs à l’intérieur de l’abri à la rue. Si les bacs sont pleins, apporter à l’éco-centre (214 Chemin du Long de la Rivière, près de Patrick Morin; ouverts tous les jours sauf dimanche et lundi).",
     "checklist.items.8": " <input type='checkbox' data-key='guardian-locked' /> S’assurer que les <em>guardian locks</em> soient en position verrouillée sur toutes les portes au rez-de-chaussée et au 1<sup>er</sup> (sauf la porte d’entrée).",
     "checklist.items.9": " <input type='checkbox' data-key='contact-issues' /> Si quelque chose s’est brisé ou si vous avez noté un problème, <strong>merci de me contacter</strong> pour m’en informer — <a href='tel:+16154952944'>615-495-2944</a> (<em>svp texte</em>), ou <a href='mailto:isabel.gauthier@vanderbilt.edu'>isabel.gauthier@vanderbilt.edu</a>.",
-     "checklist.items.10": " <input type='checkbox' data-key='thermostats' /> From October to May (WINTER): Set all thermostats on the ground floor and first floor to 15°C (they can stay at 0°C on the third floor). The 2 radiators on the lake side in the main room must be ON and set to “*”. The other radiators (in the basement and the sun room) should remain closed.",
-
     "apporter.title": "À apporter",
     "apporter.p1": "La maison fournit des articles de départ (quelques rouleaux de papier toilette, essuie-tout, quelques pods de café Keurig, tablettes pour lave-vaisselle). Pour un <strong>séjour prolongé</strong>, vous voudrez peut-être apporter des quantités supplémentaires.",
     "apporter.li1": "Papier toilette et essuie-tout (supplémentaires).",
@@ -127,6 +127,8 @@ const I18N = {
     "meta.title": "Maison Rouge – Guest Guide",
     "meta.description": "Information for guests at Maison Rouge: departure checklist, packing list, locks, internet & TV, emergencies, dehumidifier, kayak, hikes, grill, fireplace, water, power outages, waste, kitchen, washer/dryer.",
     "header.title": "Maison Rouge – Guest Guide",
+"referral.title": "Note",
+"referral.body": "If you refer someone who books and they tell me it was thanks to you, I’ll send you $50 :-)",
     "start.title": "Welcome — Choose an option",
     "start.optChecklist.h3": "Departure checklist",
     "start.optChecklist.p": "Important & required reading",
