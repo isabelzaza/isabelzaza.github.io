@@ -45,8 +45,6 @@ const I18N = {
     "checklist.items.7": " <input type='checkbox' data-key='trash' /> Vider toutes les poubelles et jeter les sacs dans les bacs à l’intérieur de l’abri à la rue. Si les bacs sont pleins, apporter à l’éco-centre (214 Chemin du Long de la Rivière, près de Patrick Morin; ouverts tous les jours sauf dimanche et lundi).",
     "checklist.items.8": " <input type='checkbox' data-key='guardian-locked' /> S’assurer que les <em>guardian locks</em> soient en position verrouillée sur toutes les portes au rez-de-chaussée et au 1<sup>er</sup> (sauf la porte d’entrée).",
     "checklist.items.9": " <input type='checkbox' data-key='contact-issues' /> Si quelque chose s’est brisé ou si vous avez noté un problème, <strong>merci de me contacter</strong> pour m’en informer — <a href='tel:+16154952944'>615-495-2944</a> (<em>svp texte</em>), ou <a href='mailto:isabel.gauthier@vanderbilt.edu'>isabel.gauthier@vanderbilt.edu</a>.",
-     "checklist.items.10": " <input type='checkbox' data-key='thermostats' /> From October to May (WINTER): Set all thermostats on the ground floor and first floor to 15°C (they can stay at 0°C on the third floor). The 2 radiators on the lake side in the main room must be ON and set to “*”. The other radiators (in the basement and the sun room) should remain closed.",
-
     "apporter.title": "À apporter",
     "apporter.p1": "La maison fournit des articles de départ (quelques rouleaux de papier toilette, essuie-tout, quelques pods de café Keurig, tablettes pour lave-vaisselle). Pour un <strong>séjour prolongé</strong>, vous voudrez peut-être apporter des quantités supplémentaires.",
     "apporter.li1": "Papier toilette et essuie-tout (supplémentaires).",
