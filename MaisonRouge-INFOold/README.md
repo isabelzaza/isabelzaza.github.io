@@ -1,14 +1,17 @@
-# Maison Rouge – Guide (FR/EN) — v3
+# Maison Rouge – Guide (FR/EN) — v6
 
-- **Top navigation removed** (no more pill buttons). Users navigate via the **landing choices** and the **Menu — Other information** section.
-- **Language toggle** is a clear button in the header: shows **ENGLISH** (or **FRANÇAIS** when in English). Default language is **French**.
-- **Movie rentals** note retained: only if owner is available to help.
+What's new in v6:
+- **Download links** for one-page checklist PDFs (FR & EN) added under the interactive checklist.
+- **Referral note** card added below the landing section (FR/EN).
+- i18n keys for download labels; small CSS for the download row.
 
 ## Files
 - `index.html`
 - `style.css`
 - `script.js`
 - `README.md`
+- `Maison_Rouge_Checklist_FR_1page.pdf`
+- `Maison_Rouge_Checklist_EN_1page.pdf`
 
 ## Deploy
-Replace these four files in your GitHub repo and reload your Pages site.
+Upload all files to your GitHub Pages repo (replace existing files). The PDF buttons appear under the checklist.
