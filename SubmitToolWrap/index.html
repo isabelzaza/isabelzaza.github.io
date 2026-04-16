@@ -89,24 +89,23 @@
   <div class="hero"></div>
 
   <div class="content">
-    <h1>YOUR TITLE HERE</h1>
+    <h1>BD&C paper defense tool</h1>
 
     <p>
-      Your are about to open the course Submit tool. 
-      Before you start, please close all other windows aside from your text editor where you paper is. 
+      You are about to open the course's tool for your paper's defense. 
+      Before you start, please close all other windows aside from your text editor where your paper is. 
       Close any browser window to Brightspace for now.
-      Having other browser windows or applications open is FORBIDEN and may interfere with the tool, 
+      Having other browser windows or applications open is FORBIDDEN and may interfere with the tool, 
       and may cause problems that make the exchange unusable.
 
+      You will have to log in to Amplify. Use the HAIKU model. Follow instructions and enjoy the discussion!
     </p>
 
     <textarea id="reflection" rows="4" placeholder="Before you continue, type your name below to attest that you will abide by the Honors code"></textarea>
 
-    <button id="continueBtn" onclick="go()">Continue to Assistant</button>
+    <button id="continueBtn" disabled>Continue to Assistant</button>
 
-    <div class="note">
-      Type your name here.
-    </div>
+    <div class="note"></div>
   </div>
 </div>
 
@@ -116,17 +115,17 @@
 
   textarea.addEventListener("input", () => {
     if (textarea.value.trim().length >= 5) {
+      button.disabled = false;
       button.classList.add("enabled");
     } else {
+      button.disabled = true;
       button.classList.remove("enabled");
     }
   });
 
-  function go() {
-    if (textarea.value.trim().length < 20) return;
-
+  button.addEventListener("click", () => {
     window.location.href = "https://www.vanderbilt.ai/assistants/bdcsubmittoolv2";
-  }
+  });
 </script>
 
 </body>
