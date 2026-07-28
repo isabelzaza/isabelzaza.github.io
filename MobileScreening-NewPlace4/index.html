@@ -103,12 +103,15 @@
 	<script>
 		var detector = new MobileDetect(window.navigator.userAgent);
 		// UA sniffing alone misses phones/tablets sending a desktop user-agent
-		// (e.g. iOS Safari "Request Desktop Website", iPadOS). Add touch + viewport
-		// signals so a small-screen touch device is treated as mobile regardless of UA.
-		var isMobile =
-			detector.mobile() != null ||
-			(navigator.maxTouchPoints > 1 && window.matchMedia('(pointer: coarse)').matches) ||
-			window.matchMedia('(max-width: 1024px)').matches;
+		// (e.g. iOS Safari "Request Desktop Website", iPadOS). Fall back to the
+		// standard touch-device test: a coarse pointer that cannot hover. This is
+		// true on phones/tablets (even with a spoofed desktop UA) and false on
+		// laptops/desktops, including touchscreen laptops (they have a trackpad,
+		// so the primary pointer is fine and can hover) and narrow browser windows.
+		var touchOnly =
+			window.matchMedia('(pointer: coarse)').matches &&
+			window.matchMedia('(hover: none)').matches;
+		var isMobile = detector.mobile() != null || touchOnly;
 		var div_id = isMobile ? "for-mobile" : "for-desktop";
 		document.addEventListener("DOMContentLoaded", function(e) {
 			document.getElementById(div_id).style.display = "block";
