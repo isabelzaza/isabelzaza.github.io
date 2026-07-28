@@ -15,7 +15,6 @@
 	</script>
 </head>
 <body>
-	<pre id="debug" style="background:#ffd; border:2px solid #c00; padding:8px; font-size:14px; white-space:pre-wrap; word-break:break-all;">debug…</pre>
 	<div id="for-desktop" style="display: none;">
 	<div class="wrapper">
 		<h1>Vanderbilt University &mdash; Information Sheet</h1>
@@ -113,16 +112,6 @@
 		var div_id = isMobile ? "for-mobile" : "for-desktop";
 		document.addEventListener("DOMContentLoaded", function(e) {
 			document.getElementById(div_id).style.display = "block";
-			var typeofMD = (typeof MobileDetect);
-			document.getElementById("debug").textContent =
-				"chosen: " + div_id + " | isMobile: " + isMobile + "\n" +
-				"typeof MobileDetect: " + typeofMD + "\n" +
-				"detector.mobile(): " + (typeof detector !== "undefined" ? detector.mobile() : "N/A") + "\n" +
-				"maxTouchPoints: " + navigator.maxTouchPoints + "\n" +
-				"pointer:coarse: " + window.matchMedia('(pointer: coarse)').matches + "\n" +
-				"max-width:1024: " + window.matchMedia('(max-width: 1024px)').matches + "\n" +
-				"innerWidth: " + window.innerWidth + " | devicePixelRatio: " + window.devicePixelRatio + "\n" +
-				"UA: " + navigator.userAgent;
 		});
 	</script>
 </body>
