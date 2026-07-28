@@ -102,7 +102,14 @@
 	<script src="mobile-detect.min.js"></script>
 	<script>
 		var detector = new MobileDetect(window.navigator.userAgent);
-		var div_id = (detector.mobile() == null ? "for-desktop" : "for-mobile");
+		// UA sniffing alone misses phones/tablets sending a desktop user-agent
+		// (e.g. iOS Safari "Request Desktop Website", iPadOS). Add touch + viewport
+		// signals so a small-screen touch device is treated as mobile regardless of UA.
+		var isMobile =
+			detector.mobile() != null ||
+			(navigator.maxTouchPoints > 1 && window.matchMedia('(pointer: coarse)').matches) ||
+			window.matchMedia('(max-width: 1024px)').matches;
+		var div_id = isMobile ? "for-mobile" : "for-desktop";
 		document.addEventListener("DOMContentLoaded", function(e) {
 			document.getElementById(div_id).style.display = "block";
 		});
